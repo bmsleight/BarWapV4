@@ -1,0 +1,22 @@
+_model: page
+---
+title: Projects
+---
+body:
+
+#### featured-image ####
+image: New_Red-Amber.jpg
+----
+align: left
+----
+thumbsize: 300
+#### text-block ####
+text:
+
+## Heading h2
+
+Some burld
+---
+wubtitle: See [Cuffelink](http://cuffelinks.com/)
+---
+subtitle: See [Cuffelink](http://cuffelinks.com/)

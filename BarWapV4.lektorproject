@@ -1,0 +1,5 @@
+[project]
+name = BarWapV4
+
+[servers.ghpages]
+target = ghpages+https://bmsleight/BarWapV4?cname=www.barwap.com

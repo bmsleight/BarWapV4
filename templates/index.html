@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block bodyclass %}<body class="landing">{% endblock %}
+
+{% block headerclass %}<header id="header" class="alt">{% endblock %}
+
+
+{% block body %}
+
+			<!-- Banner -->
+				<section id="banner">
+					<h2>{{ this.title }}</h2>
+					{{ this.subtitle }}
+					<ul class="actions">
+						<li><a href="{{ this.buttonlink }}" class="button special">{{ this.button }}</a></li>
+					</ul>
+				</section>
+
+				<section id="main" class="container">
+
+					<section class="box special">
+						<header class="major">
+							<h2>{{ this.secondtitle }}</h2>
+							{{ this.secondblurb }}
+						</header>
+					</section>
+
+                    {{ this.body }}
+
+				</section>
+				
+{% endblock %}

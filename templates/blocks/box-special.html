@@ -1,0 +1,14 @@
+{% set image = record.attachments.get(this.image) %}
+
+                    {% if this.align == 'left' %}<div class="row">{% endif %}
+						<div class="6u 12u(narrower)">
+							<section class="box special">
+								<span class="image featured"><img src="{{ image|url }}" alt="" /></span>
+								<h3>{{ this.boxtitle }}</h3>
+								{{ this.boxblurb }}
+								<ul class="actions">
+									<li><a href="{{ this.boxlink }}" class="button alt">{{ this.boxlinktext }}</a></li>
+								</ul>
+							</section>
+						</div>
+                    {% if this.align == 'right' %}</div>{% endif %}

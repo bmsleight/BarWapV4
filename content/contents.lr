@@ -1,0 +1,40 @@
+_model: index
+---
+subtitle: The website of Brendan M. Sleight
+---
+title: BarWapV4!
+---
+button: About BarWap
+---
+buttonlink: https://exmaple.com/about/
+---
+secondblurb: A central repository giving links to photos, profile, projects and software. BarWap also has been on the web since around 1996 - (get off my lawn), so it is on version 3.
+---
+secondtitle: A simple portfolio site
+---
+body:
+
+#### box-special ####
+image: New_Red-Amber.jpg
+----
+boxtitle: Cuffelink
+----
+boxblurb: Something burbly that goes on for a while. Something burbly that goes on for a while. Something burbly that goes on for a while, Something burbly that goes on for a while.Something burbly that goes on for a while
+----
+boxlinktext: Learn More Hey!
+----
+boxlink: /projects/
+----
+align: left
+#### box-special ####
+image: New_Red-Amber.jpg
+----
+boxtitle: Insert 2
+----
+boxblurb: burbly that goes on for a while. Something burbly that goes on for a while. Something burbly that goes on for a while, Something burbly that goes on for a while.Something burbly that goes on for a while
+----
+boxlinktext: Hey Hey
+----
+boxlink: /about/
+----
+align: right
