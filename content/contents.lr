@@ -2,13 +2,13 @@ _model: index
 ---
 subtitle: The website of Brendan M. Sleight
 ---
-title: BarWapV4!
+title: BarWap
 ---
 button: About BarWap
 ---
-buttonlink: https://exmaple.com/about/
+buttonlink: /about/
 ---
-secondblurb: A central repository giving links to photos, profile, projects and software. BarWap also has been on the web since around 1996 - (get off my lawn), so it is on version 3.
+secondblurb: A central repository giving links to photos, profile, projects and software.
 ---
 secondtitle: A simple portfolio site
 ---
@@ -17,24 +17,35 @@ body:
 #### box-special ####
 image: New_Red-Amber.jpg
 ----
-boxtitle: Cuffelink
+boxtitle: Hobbies and Projects
 ----
-boxblurb: Something burbly that goes on for a while. Something burbly that goes on for a while. Something burbly that goes on for a while, Something burbly that goes on for a while.Something burbly that goes on for a while
+boxblurb: A collection of some of my hobby projects, anything from building a Bed Bus, 3d Printing to traffic light cufflinks. Just space to store references and links and I am getting too old to blog. [Blogging is for the early naughties.](http://web.archive.org/web/20050312171037/http://barwap.com/blog/?article=1])
 ----
-boxlinktext: Learn More Hey!
+boxlinktext: Learn More
 ----
 boxlink: /projects/
 ----
 align: left
 #### box-special ####
-image: New_Red-Amber.jpg
+image: BMS_noMIC.jpg
 ----
-boxtitle: Insert 2
+boxtitle: Professional Work
 ----
-boxblurb: Burbly that goes on for a while. Something burbly that goes on for a while. Something burbly that goes on for a while, Something burbly that goes on for a while.Something burbly that goes on for a while
+boxblurb:
+
+Brendan Sleight is a Chartered Engineer and a fellow of Chartered
+Institution of Highways & Transportation (CIHT). He is a Chief
+Engineer at Transport for London leading teams that deliver 2,000
+projects each year for new or modified traffic lights in Greater
+London. Brendan led negotiations for the new contracts used to deliver
+these projects and related maintenance services across over 6,500
+sites, generating savings of £42m.  Brendan has led the creation of
+work placements to help ex-Armed Forces personnel who may be
+wounded, injured or sick into employment and to reduce skills gaps in
+the engineering sector.
 ----
-boxlinktext: Hey Hey
+boxlinktext: Learn More
 ----
-boxlink: /about/
+boxlink: /
 ----
 align: right
