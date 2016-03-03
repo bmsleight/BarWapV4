@@ -1,0 +1,36 @@
+title: cuffelinks.com
+---
+body:
+
+#### featured-image ####
+image: new_red-amber.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: 
+#### text-block ####
+text:
+
+I do not wear much jewellery, a wedding ring and maybe some cufflinks.  I had a set of Traffic Light shaped cufflinks printed, but someone complained that they do not work as traffic lights. So out came the soldering iron.
+
+The coin-sized PCB hiding inside the case plays host to a red, amber, and green surface mount LED. To either side of them you’ll find an ATtiny45 and a RV-8564-C2. The latter is a surface mount RTC with integrated crystal oscillator, perfect for a project where space is very tight.
+#### featured-image ####
+image: a.png
+----
+align: right
+----
+thumbsize: 300
+----
+imagelink: https://www.youtube.com/watch?v=rbpGlVypxOE
+#### text-block ####
+text:
+
+The design uses the case as a touch sensor. Every few seconds the ATtiny wakes up to see if the link is being touched. This ensures that the coin cell isn’t drained by constantly driving the LEDs. 
+
+The touch-based menu system lets you run the links like a stop light, or display the time, date, or current temperature. See a quick demo clip after the break.
+
+They even got [featured on HackADay](https://hackaday.com/2012/10/17/traffic-light-cufflinks/).  I keep developing them, trying out laser-cut version, RGB version etc. Follow the development at http://www.cuffelinks.com/ 
+---
+subtitle: Documenting my fun in developing electronic cufflinks aka cuffelinks

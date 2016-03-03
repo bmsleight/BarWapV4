@@ -1,0 +1,27 @@
+title: NoNilNil.com
+---
+body:
+
+#### featured-image ####
+image: logo.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: https://www.nonilnil.com/
+#### text-block ####
+text:
+
+
+Because Stuart did not believe me that I could put a fun friendly “wager” website together for football – I did.  No nil nil, It's simple and it's plain, why should I complain ?
+
+Just pick each week a football game that does not end up nil nil. Wait for everyone else to fail and get hit by nil nil and then you pick up the prize pot. 
+
+### Geeky Information
+
+Written using the [Django framework](https://www.djangoproject.com/) with lots of python, currently running at [OpenShift](https://www.openshift.com/) using https with the help of [Lets Encrypt](https://letsencrypt.org/).  [Source code is at gihbub](https://github.com/bmsleight/openshift-nonilnil) 
+---
+subtitle:
+
+This is a fun challenge between friends to see if they can pick each week a football game that does not end up nil nil. 

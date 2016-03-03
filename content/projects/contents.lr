@@ -9,14 +9,44 @@ image: New_Red-Amber.jpg
 ----
 align: left
 ----
-thumbsize: 300
+thumbsize: 100
+----
+imagelink: ./cuffelinks
 #### text-block ####
 text:
 
-## Heading h2
+### Cuffelinks.com
 
-Some burld
+[Documenting my fun in developing electronic cufflinks aka cuffelinks](./cuffelinks)
+#### featured-image ####
+image: cufflink.jpg
+----
+align: left
+----
+thumbsize: 100
+----
+imagelink: ./pewter-casting-with-pla
+#### text-block ####
+text:
+
+### Pewter Casting With PLA
+
+[I discovered (by accident) a new way of doing Metal Casting.](./pewter-casting-with-pla)
+#### featured-image ####
+image: logo.png
+----
+align: left
+----
+thumbsize: 100
+----
+imagelink: ./nonilnilcom/
+#### text-block ####
+text:
+
+### NoNilNil.com
+
+[This is a fun challenge between friends to see if they can pick each week a football game that does not end up nil nil.](./nonilnilcom/)
 ---
 wubtitle: See [Cuffelink](http://cuffelinks.com/)
 ---
-subtitle: See [Cuffelink](http://cuffelinks.com/)
+subtitle: Lots of details about my hobbies and projects

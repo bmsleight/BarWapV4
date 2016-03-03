@@ -27,7 +27,7 @@ text:
 
 
 The website has been around a while. The web archive project has a sighting from 2001
-* http://web.archive.org/web/20010404005506/http://www.barwap.com/
+http://web.archive.org/web/20010404005506/http://www.barwap.com/
 
 I love how web archive project, archives the silly JavaScript trick to get rid of the banner from the domain registration company.
 
@@ -42,7 +42,7 @@ thumbsize: 100
 text:
 
 The next known sighting is when the website was used fro controlling some home automation and a message board.
-* http://web.archive.org/web/20031208193747/http://www.barwap.com/
+http://web.archive.org/web/20031208193747/http://www.barwap.com/
 
 All written in perl, in the spare cupboard - (What is a cloud?).
 #### featured-image ####
@@ -55,8 +55,7 @@ thumbsize: 100
 text:
 
 Blogging is very old school - see the internet archives. Quite a few years ago now. 
-
-* http://web.archive.org/web/20050312171037/http://barwap.com/blog/?article=1
+http://web.archive.org/web/20050312171037/http://barwap.com/blog/?article=1
 #### featured-image ####
 image: 20140723145703.png
 ----
@@ -69,6 +68,6 @@ text:
 ### Version 2.0
 
 This was not too bad and had lots of photos and video and projects. Still old school, but is does start to mention twiter. 
-* http://web.archive.org/web/20140723145703/http://barwap.com/blog/
+http://web.archive.org/web/20140723145703/http://barwap.com/blog/
 #### text-block ####
 text: I can be contacted using the twitter or linkedIn links below or via email to this domain name.
