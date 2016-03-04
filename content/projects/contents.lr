@@ -5,11 +5,27 @@ title: Projects
 body:
 
 #### featured-image ####
+image: a-3-.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./boys-beds/
+#### text-block ####
+text:
+
+### Boys Beds
+
+[A proper engineering solution to limited space.](./boys-beds/)
+<br/><br/><br/><br/><br/><br/>
+<br/><br/>
+#### featured-image ####
 image: New_Red-Amber.jpg
 ----
 align: left
 ----
-thumbsize: 100
+thumbsize: 300
 ----
 imagelink: ./cuffelinks
 #### text-block ####
@@ -18,12 +34,13 @@ text:
 ### Cuffelinks.com
 
 [Documenting my fun in developing electronic cufflinks aka cuffelinks](./cuffelinks)
+<br/><br/><br/><br/><br/><br/>
 #### featured-image ####
 image: cufflink.jpg
 ----
 align: left
 ----
-thumbsize: 100
+thumbsize: 300
 ----
 imagelink: ./pewter-casting-with-pla
 #### text-block ####
@@ -32,12 +49,13 @@ text:
 ### Pewter Casting With PLA
 
 [I discovered (by accident) a new way of doing Metal Casting.](./pewter-casting-with-pla)
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
 #### featured-image ####
 image: logo.png
 ----
 align: left
 ----
-thumbsize: 100
+thumbsize: 300
 ----
 imagelink: ./nonilnilcom/
 #### text-block ####
@@ -46,6 +64,7 @@ text:
 ### NoNilNil.com
 
 [This is a fun challenge between friends to see if they can pick each week a football game that does not end up nil nil.](./nonilnilcom/)
+<br/><br/><br/><br/><br/><br/>
 ---
 wubtitle: See [Cuffelink](http://cuffelinks.com/)
 ---
