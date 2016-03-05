@@ -1,0 +1,24 @@
+title: OpenSCAD Lasercut
+---
+subtitle: Module for openscad, allowing 3d models to be created from 2d lasercut parts, with a flat file automatically generated.
+---
+body:
+
+#### featured-image ####
+image: example-004.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: https://github.com/bmsleight/lasercut
+#### text-block ####
+text:
+
+The key feature is to generate a 2d files automatically
+from the 3d-model, which can uploaded to a laser-cutter. I am not
+using python or perl, but using OpenSCAD and the children function to
+generate a OpenSCAD file which is 2d and re-uses the library. 
+
+See [Mailing List Announcement](http://forum.openscad.org/Lasercut-td14126.html) and [GitHub Source Files](https://github.com/bmsleight/lasercut) 
+<br/><br/><br/>

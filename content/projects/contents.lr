@@ -5,7 +5,7 @@ title: Projects
 body:
 
 #### featured-image ####
-image: a-3-.png
+image: 0.jpg
 ----
 align: left
 ----
@@ -36,6 +36,36 @@ text:
 [Documenting my fun in developing electronic cufflinks aka cuffelinks](./cuffelinks)
 <br/><br/><br/><br/><br/><br/>
 #### featured-image ####
+image: logo.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./nonilnilcom/
+#### text-block ####
+text:
+
+NoNilNil.com
+
+[This is a fun challenge between friends to see if they can pick each week a football game that does not end up nil nil.](./nonilnilcom/)
+<br/><br/><br/><br/><br/><br/>
+#### featured-image ####
+image: example-004.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./openscad-lasercut/
+#### text-block ####
+text:
+
+### OpenSCAD Lasercut
+
+[The key feature is to generate a 2d files automatically from the 3d-model](./openscad-lasercut/)
+<br/><br/><br/><br/><br/><br/><br/><br/>
+#### featured-image ####
 image: cufflink.jpg
 ----
 align: left
@@ -51,20 +81,21 @@ text:
 [I discovered (by accident) a new way of doing Metal Casting.](./pewter-casting-with-pla)
 <br/><br/><br/><br/><br/><br/><br/><br/><br/>
 #### featured-image ####
-image: logo.png
+image: pt.jpg
 ----
 align: left
 ----
 thumbsize: 300
 ----
-imagelink: ./nonilnilcom/
+imagelink: ./pixelate-toast
 #### text-block ####
 text:
 
-### NoNilNil.com
+### Pixelate Toast
 
-[This is a fun challenge between friends to see if they can pick each week a football game that does not end up nil nil.](./nonilnilcom/)
+The idea is to mix a few ingredients; Bread, GNU/Linux, Arduino, Wifi to serve a website
 <br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
 ---
 wubtitle: See [Cuffelink](http://cuffelinks.com/)
 ---

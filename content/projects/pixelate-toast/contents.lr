@@ -1,0 +1,22 @@
+title: Pixelate Toast
+---
+body:
+
+#### featured-image ####
+image: pt.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: http://pt.barwap.com/
+#### text-block ####
+text:
+
+[The idea is to mix a few ingredients;  Bread, GNU/Linux, Arduino,  Wifi to serve a website](http://pt.barwap.com/)
+
+[Resulting in a nice logo in toast.](http://pt.barwap.com/)
+<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/>
+---
+subtitle: Bake in to toast, displaying pixels.
