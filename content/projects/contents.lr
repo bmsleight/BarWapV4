@@ -93,9 +93,41 @@ text:
 
 ### Pixelate Toast
 
-The idea is to mix a few ingredients; Bread, GNU/Linux, Arduino, Wifi to serve a website
+[The idea is to mix a few ingredients; Bread, GNU/Linux, Arduino, Wifi to serve a website](./pixelate-toast)
 <br/><br/><br/><br/><br/><br/>
 <br/><br/><br/><br/><br/>
+#### featured-image ####
+image: splendiddoodleicons_by_bmsleight_17.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./splendid-snap/
+#### text-block ####
+text:
+
+### Splendid Snap .com
+
+[Splendid Snap is a group card game.](./splendid-snap/). Try the Pokemon and Sheep versions!
+<br/><br/><br/><br/><br/><br/>
+#### featured-image ####
+image: ats.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./traffic-lights-arduino/
+#### text-block ####
+text:
+
+### Traffic Lights Arduino
+
+[Arduino running some traffic lights](./traffic-lights-arduino/)
+<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
 ---
 wubtitle: See [Cuffelink](http://cuffelinks.com/)
 ---

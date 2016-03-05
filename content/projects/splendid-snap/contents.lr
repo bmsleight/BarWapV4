@@ -1,0 +1,28 @@
+title: SplendidSnap.com
+---
+subtitle:
+
+Splendid Snap is a group card game. 
+---
+body:
+
+#### featured-image ####
+image: splendiddoodleicons_by_bmsleight_17.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: http://splendidsnap.com/
+#### text-block ####
+text:
+
+[Splendid Snap](http://splendidsnap.com/) is a group card game. It consists of a pack of cards, with a selection of symbols on each card. On two cards, there is one identical symbol in common on each card. There will always be one and only one match of symbols.
+
+Can you spot the matching symbols in the two cards on the left ?
+
+<br/>
+[Can be used as a teaching resource](https://www.reddit.com/r/teachingresources/comments/3eokk3/make_you_own_pack_of_cards_splendidsnap/)
+see the example simple times table, a Spanish and a French versions version. 
+
+Another project written using [Django](https://www.djangoproject.com/), all the code is again available at https://github.com/bmsleight/SplendidSnap

@@ -1,0 +1,61 @@
+title:
+
+Traffic Lights Arduino 
+---
+subtitle: Arduino running some traffic lights
+---
+body:
+
+#### featured-image ####
+image: ats.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: https://github.com/bmsleight/arduino-traffic-signals
+#### text-block ####
+text:
+
+I have written a full, interrupt driven sketches for an arduino running some traffic signals. The models a simple pedestrian crossing (Pelican). 
+
+```
+sequence[SEQUENCE_TYPES][MAX_STEPS][2]  =
+{
+  { // Normal Traffic RAG
+  {RED, 3},
+  {RED + AMBER, 2},
+  {GREEN, 7},
+  {AMBER, 2},
+  {RED, 3},
+  {END_SEQUENCE, 1},
+}
+```
+<br/><br/>
+#### featured-image ####
+image: nano.jpeg
+----
+align: right
+----
+thumbsize: 300
+----
+imagelink: https://github.com/bmsleight/arduino-traffic-signals
+#### text-block ####
+text:
+
+
+More technical details can be [found in this post](http://www.cuffelinks.com/stop-that-flash-jitter.html) with the [source code on github](https://github.com/bmsleight/arduino-traffic-signals)
+<br/><br/><br/><br/><br/><br/>
+#### featured-image ####
+image: nano_more.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: https://github.com/bmsleight/arduino-traffic-signals
+#### text-block ####
+text:
+
+<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
