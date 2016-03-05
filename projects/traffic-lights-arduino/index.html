@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Barwap - Brendan M. Sleight - Pixelate Toast</title>
+		<title>Barwap - Brendan M. Sleight - Traffic Lights Arduino</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -53,18 +53,18 @@
 									   <a href="../../projects/pewter-casting-with-pla/"  >Pewter Casting with PLA</a>
                                    
                                
-                                   <li class="active">
-									   <a href="../../projects/pixelate-toast/" class="icon fa-angle-left" >Pixelate Toast</a>
-                                   
-                                     <ul></ul>
+                                   <li>
+									   <a href="../../projects/pixelate-toast/"  >Pixelate Toast</a>
                                    
                                
                                    <li>
 									   <a href="../../projects/splendid-snap/"  >SplendidSnap.com</a>
                                    
                                
-                                   <li>
-									   <a href="../../projects/traffic-lights-arduino/"  >Traffic Lights Arduino</a>
+                                   <li class="active">
+									   <a href="../../projects/traffic-lights-arduino/" class="icon fa-angle-left" >Traffic Lights Arduino</a>
+                                   
+                                     <ul></ul>
                                    
                                </ul>
                                    
@@ -80,19 +80,44 @@
            
 				<section id="main" class="container">
 					<header>
-						<h2>Pixelate Toast</h2>
-						<p>Bake in to toast, displaying pixels.</p>
+						<h2>Traffic Lights Arduino</h2>
+						<p>Arduino running some traffic lights</p>
 
 					</header>
 					<div class="box">
                     
 
-<span class="image left"><a href="http://pt.barwap.com/" ><img src="../../projects/pixelate-toast/pt@300.jpg" alt="" /></a></span>
+<span class="image left"><a href="https://github.com/bmsleight/arduino-traffic-signals" ><img src="../../projects/traffic-lights-arduino/ats@300.jpg" alt="" /></a></span>
 
-<p><a href="http://pt.barwap.com/">The idea is to mix a few ingredients;  Bread, GNU/Linux, Arduino,  Wifi to serve a website</a></p>
-<p><a href="http://pt.barwap.com/">Resulting in a nice logo in toast.</a>
-<br/><br/><br/><br/><br/><br/>
-<br/><br/><br/></p>
+<p>I have written a full, interrupt driven sketches for an arduino running some traffic signals. The models a simple pedestrian crossing (Pelican).</p>
+<pre><code>sequence[SEQUENCE_TYPES][MAX_STEPS][2]  =
+{
+  { // Normal Traffic RAG
+  {RED, 3},
+  {RED + AMBER, 2},
+  {GREEN, 7},
+  {AMBER, 2},
+  {RED, 3},
+  {END_SEQUENCE, 1},
+}
+</code></pre>
+<p><br/><br/></p>
+
+
+
+
+<span class="image right"><a href="https://github.com/bmsleight/arduino-traffic-signals" ><img src="../../projects/traffic-lights-arduino/nano@300.jpeg" alt="" /></a></span>
+
+<p>More technical details can be <a href="http://www.cuffelinks.com/stop-that-flash-jitter.html">found in this post</a> with the <a href="https://github.com/bmsleight/arduino-traffic-signals">source code on github</a>
+<br/><br/><br/><br/><br/><br/></p>
+
+
+
+
+<span class="image left"><a href="https://github.com/bmsleight/arduino-traffic-signals" ><img src="../../projects/traffic-lights-arduino/nano_more@300.jpg" alt="" /></a></span>
+
+<p><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/></p>
 
 					</div>
 				</section>
