@@ -97,6 +97,22 @@ text:
 <br/><br/><br/><br/><br/><br/>
 <br/><br/><br/><br/><br/>
 #### featured-image ####
+image: IMG_20160312_224121.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./printing-3d/
+#### text-block ####
+text:
+
+### Printing 3d
+
+Collection of 3d printed items on my printrbot
+
+<br/><br/><br/><br/><br/><br/>
+#### featured-image ####
 image: splendiddoodleicons_by_bmsleight_17.png
 ----
 align: left

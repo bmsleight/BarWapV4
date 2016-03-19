@@ -1,0 +1,70 @@
+title: Printing (3d)
+---
+subtitle: Collection of 3d printed items on my printrbot
+---
+body:
+
+#### featured-image ####
+image: IMG_20160312_224121.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: https://github.com/bmsleight/steno-key-stacks/
+#### text-block ####
+text:
+
+### steno-key-stacks
+
+These key covers (inspired by Laser-Cut Steno Keys Kit) help make a [N-Key Rollover keyboard](http://stenoknight.com/wiki/N-key_rollover) in to a real-time stenography machine. See http://www.openstenoproject.org/ for more information.
+
+The source code is available at https://github.com/bmsleight/steno-key-stacks/
+<br/><br/><br/><br/>
+#### featured-image ####
+image: cuffelink.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: http://www.thingiverse.com/thing:431234
+#### text-block ####
+text:
+
+### Cufflink Customizer - No support, No Glue, No hassle
+
+Cufflink (no you notice a theme) that can be customised with the letter of your choice. 
+
+I am not a fan of support material or glueing.  The Letters are printing so that they emerge from the backing at 45 degrees, so that all parts of the letters are supported.  Customise a part at http://www.thingiverse.com/thing:431234
+<br/><br/><br/><br/>
+#### featured-image ####
+image: CbNBjv4WcAAHnXG.jpg
+----
+align: left
+----
+thumbsize: 100
+----
+imagelink: https://twitter.com/bmsleight/status/698974539380826115
+#### featured-image ####
+image: CbNBk4NW4AAT30y.jpg
+----
+align: left
+----
+thumbsize: 100
+----
+imagelink: https://twitter.com/bmsleight/status/698974539380826115
+#### featured-image ####
+image: CbNBnlcWIAAqXSf.jpg
+----
+align: left
+----
+thumbsize: 100
+----
+imagelink: https://twitter.com/bmsleight/status/698974539380826115
+#### text-block ####
+text:
+
+### Shower Mount
+
+The bottom mount on the shower broke. No chance of getting a replacement part and no chance of finding another set of mount with the same fixing points, especially when one of the fixing point had to drilled off centre.  The solution, make and print a part. Hey presto.
