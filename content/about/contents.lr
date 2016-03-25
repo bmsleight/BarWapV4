@@ -13,7 +13,7 @@ text:
 
 BarWap also has been on the web since around 1996 - (get off my lawn), so it is on version 3.2. A central repository giving links to photos, profile, projects and software. 
 
-For years on end the domain gets no love then suddenly springs into lift again. Currently hosted using [Git Hub Pages](https://pages.github.com/) using [Lektor](https://www.getlektor.com/) to build - https://github.com/bmsleight/BarWapV4/
+For years on end the domain gets no love then suddenly springs into life again. Currently hosted using [Git Hub Pages](https://pages.github.com/) using [Lektor](https://www.getlektor.com/) to build - https://github.com/bmsleight/BarWapV4/
 
 ### Older Versions 
 #### featured-image ####
@@ -22,6 +22,8 @@ image: 20010404005506.png
 align: left
 ----
 thumbsize: 100
+----
+imagelink: 
 #### text-block ####
 text:
 
@@ -38,6 +40,8 @@ image: 20031208193747.png
 align: right
 ----
 thumbsize: 100
+----
+imagelink: 
 #### text-block ####
 text:
 
@@ -51,6 +55,8 @@ image: 20050312171037.png
 align: left
 ----
 thumbsize: 100
+----
+imagelink: 
 #### text-block ####
 text:
 
@@ -62,6 +68,8 @@ image: 20140723145703.png
 align: right
 ----
 thumbsize: 300
+----
+imagelink: 
 #### text-block ####
 text:
 
