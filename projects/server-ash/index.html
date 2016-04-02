@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Brendan Sleight - Roundabout</title>
+		<title>Brendan Sleight - Server Ash</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -64,14 +64,14 @@
 									   <a href="../../projects/printing-3d/"  >Printing (3d)</a>
                                    
                                
-                                   <li class="active">
-									   <a href="../../projects/roundabout/" class="icon fa-angle-left" >Roundabout</a>
-                                   
-                                     <ul></ul>
+                                   <li>
+									   <a href="../../projects/roundabout/"  >Roundabout</a>
                                    
                                
-                                   <li>
-									   <a href="../../projects/server-ash/"  >Server Ash</a>
+                                   <li class="active">
+									   <a href="../../projects/server-ash/" class="icon fa-angle-left" >Server Ash</a>
+                                   
+                                     <ul></ul>
                                    
                                
                                    <li>
@@ -95,90 +95,52 @@
            
 				<section id="main" class="container">
 					<header>
-						<h2>Roundabout</h2>
-						<p>Roundabouts are expensive to buy</p>
+						<h2>Server Ash</h2>
+						<p>Ash is my main home server .</p>
 
 					</header>
 					<div class="box">
                     
 
-<span class="image left"><a href="" ><img src="../../projects/roundabout/HugRoundabout@300.jpg" alt="" /></a></span>
+<span class="image left"><a href="" ><img src="../../projects/server-ash/server-ash@500.png" alt="" /></a></span>
 
-<p>Connor likes roundabouts, roundabouts are expensive to buy and you do not get much for your money.</p>
-<p>Time to get building …
-<br/><br/><br/>
-<br/><br/><br/></p>
-
-
-
-
-<span class="image right"><a href="" ><img src="../../projects/roundabout/Freecycle002@300.jpg" alt="" /></a></span>
-
-
-
-<span class="image right"><a href="" ><img src="../../projects/roundabout/Freecycle001@100.jpg" alt="" /></a></span>
-
-<h3>Materials</h3>
-<ul>
-<li>An axle</li>
-<li>A circular piece of wood</li>
-<li>Screws</li>
-<li>More Screws</li>
-<li>Paint</li>
-</ul>
-<p>The first two items I acquired using <a href="http://uk.freecycle.org/">Freecycle</a>. A chair gives a nice axle. I also got a Dinning table via Freecycle. Thanks to Aya and Richard (from Freecycle) for the chair and table.
-<br/><br/><br/></p>
+<h3>Ash</h3>
+<p>Ash is my main home server . It hosts a few virtual machines (including this website), it also a good point to document the configuration somewhere; as the source of this website is on git hub this also makes a nice config back-up.</p>
+<p>Named after <a href="http://lmgtfy.com/?q=ash+ketchum">Ash Ketchum</a></p>
+<p><br/><br/><br/></p>
 
 
 
 
-<span class="image left"><a href="" ><img src="../../projects/roundabout/Image193@300.jpg" alt="" /></a></span>
+<span class="image right"><a href="https://myth.barwap.com/mythweb" ><img src="../../projects/server-ash/mythweb@300.png" alt="" /></a></span>
 
-
-
-<span class="image left"><a href="" ><img src="../../projects/roundabout/Image192@100.jpg" alt="" /></a></span>
-
-<h3>Building</h3>
-<p>The dinning table was a circular table which could be expanded out to an oval shape. I used these extra leaves to level the base. Then screwed to this the old table top.</p>
-<p>Next give the table top a good sanding and paint. I also made a step/base around the roundabout.
-<br/><br/><br/></p>
+<h3>mythtv.lan</h3>
+<p>This a visualised instance of mythUbuntu. This is my forth upgrade to my home <a href="https://www.mythtv.org/">mythtv</a> server. The <a href="https://www.google.co.uk/search?q=mythweb+screenshot&amp;tbm=isch&amp;tbo=u&amp;source=univ">screenshots for mythweb give an idea of greatness of mythtv</a></p>
+<p>Available at <a href="http://myth.barwap.com/mythweb">http://myth.barwap.com/mythweb</a> but you need a user name and password unlike your standard magazine the newsagents for TV.</p>
 
 
 
 
-<span class="image right"><a href="" ><img src="../../projects/roundabout/Image205@300.jpg" alt="" /></a></span>
+<span class="image right"><a href="" ><img src="../../projects/server-ash/mythtv-usb@300.png" alt="" /></a></span>
+
+<p>This is my first mythtv running in a virtual machine - the trick is to pass the USB, only later versions of Ubuntu (14.04.04 or +), keep the same bus and device after warm boots of the USB controller.</p>
+<pre><code class="lang-xml">    &lt;hostdev mode=&#39;subsystem&#39; type=&#39;usb&#39; managed=&#39;yes&#39;&gt;
+      &lt;source&gt;
+        &lt;address bus=&#39;2&#39; device=&#39;2&#39;/&gt;
+      &lt;/source&gt;
+      &lt;alias name=&#39;hostdev0&#39;/&gt;
+    &lt;/hostdev&gt;
+</code></pre>
 
 
 
-<span class="image right"><a href="" ><img src="../../projects/roundabout/Image207@300.jpg" alt="" /></a></span>
 
-<p>Alas I had to buy some timber, which took the budget up a little. It was not too bad as B&amp;Q cut the panels to size. The base is made in four quarters, so can be easily stacked away. In total there are legs (7 x 4) legs plus 5 anchor points for the securing the base. Thanks to PVG for lending me his saw to cut 33 legs.</p>
-<p>I found some cheap (£2.50) children's chairs which were mounted on top.</p>
+<span class="image left"><a href="" ><img src="../../projects/server-ash/pound-https@300.png" alt="" /></a></span>
 
-
-<h3>Inspection Time</h3>
-
-
-
-
-<span class="image left"><a href="" ><img src="../../projects/roundabout/UnderRoundabout@300.jpg" alt="" /></a></span>
-
-
-
-<span class="image left"><a href="" ><img src="../../projects/roundabout/UnderRoundabout002@300.jpg" alt="" /></a></span>
-
-
-
-<span class="image left"><a href="" ><img src="../../projects/roundabout/UnderRoundabout003@300.jpg" alt="" /></a></span>
-
-<p><br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/><br/>
-<br/><br/><br/></p>
-
-
-<h3>Roundabout In Action</h3>
-<p><br/><br/><br/><br/><br/><br/></p>
+<h3>pound.lan</h3>
+<p>This the workhorse of the server in terms fo the outside world. It runs <a href="http://www.apsis.ch/pound/">Pound</a>,  the Pound program is a reverse proxy, load balancer and HTTPS front-end for Web servers.</p>
+<p>The detailed config is stored <a href="https://github.com/bmsleight/teletubbies-pound">https://github.com/bmsleight/teletubbies-pound</a>. To help get <a href="https://letsencrypt.org/">let's encrypt</a> I used a few google searches and this post <a href="https://secwise.nl/lets-encrypt-certifcates-and-pound-load-balancer/">Let's Encrypt Certificates and Pound Load Balancer</a></p>
+<p>The <a href="https://raw.githubusercontent.com/bmsleight/teletubbies-pound/master/pound.cfg">config file fro pound</a>, redirects anything to the https except for /.well-known/acme-challenge/ - ironically used for let's encrypt.</p>
 
 					</div>
 				</section>
