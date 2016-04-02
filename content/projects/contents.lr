@@ -126,7 +126,22 @@ text:
 ### Roundabout 
 
 Connor likes roundabouts, roundabouts are expensive to buy and you do not get much for your money. Time to get building …
-<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/>
+#### featured-image ####
+image: server-ash.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./server-ash/
+#### text-block ####
+text:
+
+### Server Ash
+
+[Ash is my main home server ](./splendid-snap/). It hosts a few virtual machines (including this website), it also a good point to document the configuration somewhere; as the [source of this website is on git hub](https://github.com/bmsleight/BarWapV4) this also makes a nice config back-up.  
+<br/><br/><br/><br/><br/>
 #### featured-image ####
 image: splendiddoodleicons_by_bmsleight_17.png
 ----

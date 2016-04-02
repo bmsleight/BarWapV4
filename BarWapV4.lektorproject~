@@ -1,0 +1,11 @@
+[project]
+name = BarWapV4
+
+[servers.production]
+name = Production
+enabled = yes
+default = yes
+target = rsync://bms@barwap.com/home/bms/www.barwap.com/html/
+
+[servers.ghpages]
+target = ghpages+https://bmsleight/BarWapV4?cname=www.barwap.com

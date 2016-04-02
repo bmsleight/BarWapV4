@@ -1,0 +1,81 @@
+title: Server Ash
+---
+body:
+
+#### featured-image ####
+image: server-ash.png
+----
+align: left
+----
+thumbsize: 500
+----
+imagelink: 
+#### text-block ####
+text:
+
+### Ash
+
+Ash is my main home server . It hosts a few virtual machines (including this website), it also a good point to document the configuration somewhere; as the source of this website is on git hub this also makes a nice config back-up.
+
+Named after [Ash Ketchum](http://lmgtfy.com/?q=ash+ketchum)
+
+<br/><br/><br/>
+#### featured-image ####
+image: mythweb.png
+----
+align: right
+----
+thumbsize: 300
+----
+imagelink: https://myth.barwap.com/mythweb
+#### text-block ####
+text:
+
+### mythtv.lan
+
+This a visualised instance of mythUbuntu. This is my forth upgrade to my home [mythtv](https://www.mythtv.org/) server. The [screenshots for mythweb give an idea of greatness of mythtv](https://www.google.co.uk/search?q=mythweb+screenshot&tbm=isch&tbo=u&source=univ)
+
+Available at http://myth.barwap.com/mythweb but you need a user name and password unlike your standard magazine the newsagents for TV. 
+#### featured-image ####
+image: mythtv-usb.png
+----
+align: right
+----
+thumbsize: 300
+----
+imagelink: 
+#### text-block ####
+text:
+
+This is my first mythtv running in a virtual machine - the trick is to pass the USB, only later versions of Ubuntu (14.04.04 or +), keep the same bus and device after warm boots of the USB controller.
+
+```xml
+    <hostdev mode='subsystem' type='usb' managed='yes'>
+      <source>
+        <address bus='2' device='2'/>
+      </source>
+      <alias name='hostdev0'/>
+    </hostdev>
+```
+#### featured-image ####
+image: pound-https.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: 
+#### text-block ####
+text:
+
+### pound.lan
+
+This the workhorse of the server in terms fo the outside world. It runs [Pound](http://www.apsis.ch/pound/),  the Pound program is a reverse proxy, load balancer and HTTPS front-end for Web servers.
+
+The detailed config is stored https://github.com/bmsleight/teletubbies-pound. To help get [let's encrypt](https://letsencrypt.org/) I used a few google searches and this post [Let's Encrypt Certificates and Pound Load Balancer](https://secwise.nl/lets-encrypt-certifcates-and-pound-load-balancer/)
+
+The [config file fro pound](https://raw.githubusercontent.com/bmsleight/teletubbies-pound/master/pound.cfg), redirects anything to the https except for /.well-known/acme-challenge/ - ironically used for let's encrypt. 
+---
+subtitle:
+
+Ash is my main home server . 

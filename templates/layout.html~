@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Brendan Sleight - {{ this.title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+
+                <meta name="keywords" content="Brendan,Sleight,barwap,projects, Brendan M. Sleight">
+                <meta name="author" content="Brendan Sleight">
+	</head>
+      {% block bodyclass %}{% endblock %}
+		<div id="page-wrapper">
+
+			<!-- Header -->
+              {% block headerclass %}{% endblock %}
+					<h1><a href="/">BarWap</a> Brendan M. Sleight</h1>
+					<nav id="nav">
+						<ul>
+							<li>
+								<a href="/" class="icon fa-angle-down">Menu</a>
+								<ul> 
+                               {% set root = site.get('/') %}
+                               {% for child in root.children recursive %}
+                                   <li{% if this._path == child._path %} class="active"{% endif %}>
+									   <a href="{{ child|url }}" {% if this.is_child_of(child) %}class="icon fa-angle-left"{% endif %} >{{ child.title }}</a>
+                                   {% if this.is_child_of(child) %}
+                                     <ul>{{ loop(child.children) }}</ul>
+                                   {% endif %}
+                               {% endfor %}
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</header>
+				
+			<!-- Banners and Body -->			
+			
+           {% block body %}{% endblock %}
+ 
+ 			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://github.com/bmsleight/" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://twitter.com/bmsleight" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://uk.linkedin.com/in/brendan-sleight-845b9879" class="icon fa-linkedin"><span class="label">Facebook</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Brendan M. Sleight All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/jquery.scrollgress.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>
+
+ 
