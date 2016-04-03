@@ -60,7 +60,7 @@ This is my first mythtv running in a virtual machine - the trick is to pass the 
 #### featured-image ####
 image: pound-https.png
 ----
-align: left
+align: right
 ----
 thumbsize: 300
 ----
@@ -68,13 +68,91 @@ imagelink:
 #### text-block ####
 text:
 
-### pound.lan
+### scrambled.lan
 
 This the workhorse of the server in terms fo the outside world. It runs [Pound](http://www.apsis.ch/pound/),  the Pound program is a reverse proxy, load balancer and HTTPS front-end for Web servers.
 
 The detailed config is stored https://github.com/bmsleight/teletubbies-pound. To help get [let's encrypt](https://letsencrypt.org/) I used a few google searches and this post [Let's Encrypt Certificates and Pound Load Balancer](https://secwise.nl/lets-encrypt-certifcates-and-pound-load-balancer/)
 
-The [config file fro pound](https://raw.githubusercontent.com/bmsleight/teletubbies-pound/master/pound.cfg), redirects anything to the https except for /.well-known/acme-challenge/ - ironically used for let's encrypt. 
+The [config file for pound](https://raw.githubusercontent.com/bmsleight/teletubbies-pound/master/pound.cfg), redirects anything to the https except for /.well-known/acme-challenge/ - ironically used for let's encrypt. 
+<br/><br/><br/><br/>
+#### featured-image ####
+image: shaun.png
+----
+align: right
+----
+thumbsize: 300
+----
+imagelink: 
+#### text-block ####
+text:
+
+### ShaunTheSheep
+
+This is a simple server to share files on the lan.  Folder with are on Samba shares, to move around between users and machines. 
+<br/><br/><br/><br/><br/>
+#### featured-image ####
+image: barwap-window.png
+----
+align: right
+----
+thumbsize: 300
+----
+imagelink: ./barwap-window.png
+#### text-block ####
+text:
+
+### barwap.lan
+
+This site, static hosted from nginx, Lektor target of target = rsync://bms@barwap.lan/home/bms/www.barwap.com/html/
+<br/><br/><br/><br/><br/>
+<br/><br/>
+#### featured-image ####
+image: vic-screenshot.png
+----
+align: right
+----
+thumbsize: 300
+----
+imagelink: ./vic-screenshot.png
+#### text-block ####
+text:
+
+### vic.lan
+
+A virtual machine running Lubuntu, (Ubuntu that is lighter, less resource hungry and more energy-efficient by using lightweight applications and LXDE,), with has [calibre](https://calibre-ebook.com/) in the background so I get my daily paper to my kindle.  Also it is nice to have another desktop handy. 
+<br/><br/><br/><br/><br/>
+#### featured-image ####
+image: determine-logo.png
+----
+align: right
+----
+thumbsize: 300
+----
+imagelink: /professional-work/#determine
+#### text-block ####
+text:
+
+### determine.lan
+
+Hosting of determine.org.uk, more information detailed under https://www.barwap.com/professional-work/#determine
+<br/><br/><br/>
+#### featured-image ####
+image: owncloud.png
+----
+align: right
+----
+thumbsize: 300
+----
+imagelink: https://owncloud.barwap.com/owncloud/
+#### text-block ####
+text:
+
+### owncloud.lan
+
+Running an instance of https://owncloud.org/ -so we can share files externally with ease. .
+<br/><br/><br/><br/><br/>
+<br/><br/>
 ---
 subtitle:
 
