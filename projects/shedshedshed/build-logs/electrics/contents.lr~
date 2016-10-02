@@ -1,0 +1,65 @@
+title: Electrics
+---
+subtitle:
+
+Some details on the electrics in the shed - basically build notes. 
+---
+body:
+
+#### featured-image ####
+image: sketch1.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./sketch1.png
+#### featured-image ####
+image: existingbox.jpg
+----
+align: right
+----
+thumbsize: 100
+----
+imagelink: ./existingbox.jpg
+#### featured-image ####
+image: mcb.jpg
+----
+align: right
+----
+thumbsize: 100
+----
+imagelink: ./mcb.jpg
+#### text-block ####
+text:
+
+#### Rough Design Sketch.
+
+Sketch via [tinkercad](https://www.tinkercad.com). Two lighting points, two of triple double gang sockets (with built in USB) and a doubel docket to power the telly.  Planning to use easybulb.com / limitlessled.com/ / mi-light to control the lights - hence no physical wired lighting switches. 
+
+~~At the moment the limiting factor is the 6A MCB on my house's consumer unit that [feeds outside](https://imgur.com/a/RQNy2).~~
+
+Items to purchase:-
+* http://www.screwfix.com/p/time-arctic-flexible-cable-3183ag-3-core-2-5mm-x-50m-blue/94475
+* http://www.screwfix.com/p/tower-round-cable-clips-9-10mm-white-pack-of-100/11824
+* http://www.screwfix.com/p/tower-external-gland-kit-20-ip66-pack-of-2/56505
+* http://www.screwfix.com/p/-/44635
+
+Within the walls
+* http://www.screwfix.com/p/wago-abox-lever-connector-222-series-junction-box/9390g
+or
+* http://www.screwfix.com/p/3-way-lever-connector-222-series-pack-of-50/76776
+* http://www.screwfix.com/p/4-entry-junction-box-with-knockouts-grey-65-x-65-x-45mm/63295
+
+#### Terminating SWA
+* http://wiki.diyfaq.org.uk/index.php/Terminating_SWA
+
+
+#### Code
+python-dev, pip
+https://shkspr.mobi/blog/2016/02/cheap-bluetooth-buttons-and-linux/
+http://www.thingiverse.com/thing:1015706
+
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/><br/>

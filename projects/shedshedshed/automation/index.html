@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Brendan Sleight - Automation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+
+                <meta name="keywords" content="Brendan,Sleight,barwap,projects, Brendan M. Sleight">
+                <meta name="author" content="Brendan Sleight">
+	</head>
+      <body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+              <header id="header">
+					<h1><a href="/">BarWap</a> Brendan M. Sleight</h1>
+					<nav id="nav">
+						<ul>
+							<li>
+								<a href="/" class="icon fa-angle-down">Menu</a>
+								<ul> 
+                               
+                               
+                                   <li>
+									   <a href="../../../about/"  >About This Website</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../professional-work/"  >Professional Work</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/" class="icon fa-angle-left" >Projects</a>
+                                   
+                                     <ul>
+                                   <li>
+									   <a href="../../../projects/boys-beds/"  >Boys Beds</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/cuffelinks/"  >cuffelinks.com</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/microbutton/"  >Microbutton</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/nonilnilcom/"  >NoNilNil.com</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/openscad-lasercut/"  >OpenSCAD Lasercut</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/pewter-casting-with-pla/"  >Pewter Casting with PLA</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/pixelate-toast/"  >Pixelate Toast</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/printing-3d/"  >Printing (3d)</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/roundabout/"  >Roundabout</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/server-ash/"  >Server Ash</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/shedshedshed/" class="icon fa-angle-left" >ShedShedShed</a>
+                                   
+                                     <ul>
+                                   <li class="active">
+									   <a href="../../../projects/shedshedshed/automation/" class="icon fa-angle-left" >Automation</a>
+                                   
+                                     <ul></ul>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/shedshedshed/build-logs/"  >Build Logs</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/shedshedshed/costs/"  >Costs</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/shedshedshed/plan-and-set-up/"  >Plan &amp; Set-up</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/shedshedshed/printed-parts/"  >Printed Parts</a>
+                                   
+                               </ul>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/splendid-snap/"  >SplendidSnap.com</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/traffic-lights-arduino/"  >Traffic Lights Arduino</a>
+                                   
+                               </ul>
+                                   
+                               
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</header>
+				
+			<!-- Banners and Body -->			
+			
+           
+				<section id="main" class="container">
+					<header>
+						<h2>Automation</h2>
+						<p>Details of how the Shed is automated, the code used to control light, locks and printers.</p>
+
+					</header>
+					<div class="box">
+                    <h4>Hardware</h4>
+<ul>
+<li>Raspberry Pi 3 Model b. [Key: built in Bluetooth Low Energy (BLE)]</li>
+<li>Light-bulbs - [9W Smart Wireless LED Light Bluetooth Control] via ebay £9 generic Chinese. "Triones"</li>
+<li>Smart Plug - Kankun K1</li>
+<li>Electronic Door Lock - via eBay £29 generic Chinese, with no power lock is closed.</li>
+</ul>
+<p>The Raspberry PI (aka <a href="http://blueberrypi.lan/">http://blueberrypi.lan/</a>) is server for the lights, smart plug and lock.</p>
+
+
+
+
+<span class="image left"><a href="" ><img src="../../../projects/shedshedshed/automation/screenshot@300.png" alt="" /></a></span>
+
+<h4>Front End &amp; Index.html</h4>
+<p>The front end is a nice webpage. <a href="https://github.com/bmsleight/shedcode/blob/master/control/index.html">Source code</a>.   The <a href="https://github.com/bmsleight/shedcode/tree/master/control/css">style sheets</a> are good old bootstrap, using <a href="https://getbootstrap.com/examples/sticky-footer/">sticky-footer.css</a>.  The body is place holders div.</p>
+<pre><code>&lt;body&gt;
+    &lt;div class="container"&gt;
+      &lt;div class="page-header"&gt;
+        &lt;h1&gt;Take Control&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;p class="lead"&gt;&lt;/p&gt;
+      &lt;div id="lights"&gt;&lt;/div&gt;
+      &lt;div id="lights-all"&gt;&lt;/div&gt;
+      &lt;div id="locks"&gt;&lt;/div&gt;
+      &lt;h3&gt;Log&lt;/h2&gt;
+      &lt;p id="comments"&gt;&lt;/p
+    &lt;/div&gt;
+    &lt;footer class="footer"&gt;
+      &lt;div class="container"&gt;
+        &lt;p class="text-muted"&gt;Control Man Cave&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+</code></pre>
+
+
+<p>The elements are then updated using javascript. First the <a href="https://github.com/bmsleight/shedcode/blob/master/control/config.json">config file</a> is loaded via ajax</p>
+<pre><code>.ajax( { url: 'config', dataType: 'json' } )
+</code></pre>
+<p>Javascript then parses the json and generates the buttons.</p>
+
+
+<h4>Server</h4>
+<p>The server is based upon <a href="http://www.cherrypy.org/">CherryPy</a>. Source code - <a href="https://github.com/bmsleight/shedcode/blob/master/control/lights.py">https://github.com/bmsleight/shedcode/blob/master/control/lights.py</a></p>
+<pre><code>class Control(object):
+    @cherrypy.expose
+    def index(self):
+        return open('index.html')
+    @cherrypy.expose
+    def config(self):
+        return open('config.json')
+
+@cherrypy.expose
+class ControlLightWebService(object):
+    @cherrypy.tools.accept(media='text/plain')
+    def PUT(self, action, address):
+        control_light(address, action)
+        return "Ok"
+
+@cherrypy.expose
+class ControlLockWebService(object):
+    @cherrypy.tools.accept(media='text/plain')
+    def PUT(self, action, address):
+        control_lock(address, action)
+        return "Ok"
+</code></pre>
+
+
+<h4>Plugs</h4>
+<p><a href="https://github.com/homedash/kankun-json">https://github.com/homedash/kankun-json</a>
+<a href="http://www.anites.com/2015/01/hacking-kankun-smart-wifi-plug.html">http://www.anites.com/2015/01/hacking-kankun-smart-wifi-plug.html</a></p>
+<pre><code>curl -H "Content-Type: application/json"   http://192.168.1.141/cgi-bin/json.cgi?set=off
+</code></pre>
+
+
+<h4>Rough notes so far</h4>
+<h4>Bluetooth</h4>
+<p>With help from - <a href="https://github.com/madhead/saberlight/blob/master/protocols/Triones/protocol.md">https://github.com/madhead/saberlight/blob/master/protocols/Triones/protocol.md</a></p>
+<pre><code>pi@blueberry:~ $ sudo gatttool -I E0:E5:CF:AD:71:A0
+[                 ][LE]&gt; connect E0:E5:CF:AD:71:A0
+Attempting to connect to E0:E5:CF:AD:71:A0
+Connection successful
+[E0:E5:CF:AD:71:A0][LE]&gt; char
+char-desc        char-read-hnd    char-read-uuid   char-write-cmd   char-write-req   characteristics  
+[E0:E5:CF:AD:71:A0][LE]&gt; char-write-req 
+Usage: char-write-req &lt;handle&gt; &lt;new value&gt;
+[E0:E5:CF:AD:71:A0][LE]&gt; help
+help                                           Show this help
+exit                                           Exit interactive mode
+quit                                           Exit interactive mode
+connect         [address [address type]]       Connect to a remote device
+disconnect                                     Disconnect from a remote device
+primary         [UUID]                         Primary Service Discovery
+included        [start hnd [end hnd]]          Find Included Services
+characteristics [start hnd [end hnd [UUID]]]   Characteristics Discovery
+char-desc       [start hnd] [end hnd]          Characteristics Descriptor Discovery
+char-read-hnd   &lt;handle&gt;                       Characteristics Value/Descriptor Read by handle
+char-read-uuid  &lt;UUID&gt; [start hnd] [end hnd]   Characteristics Value/Descriptor Read by UUID
+char-write-req  &lt;handle&gt; &lt;new value&gt;           Characteristic Value Write (Write Request)
+char-write-cmd  &lt;handle&gt; &lt;new value&gt;           Characteristic Value Write (No response)
+sec-level       [low | medium | high]          Set security level. Default: low
+mtu             &lt;value&gt;                        Exchange MTU for GATT/ATT
+[E0:E5:CF:AD:71:A0][LE]&gt; char-write-req 0x0043 56ffffff00f0aa
+Characteristic value was written successfull
+
+[E0:E5:CF:AD:71:A0][LE]&gt; char-write-req 0x0043 56000000ff0faa
+Characteristic value was written successfully
+[E0:E5:CF:AD:71:A0][LE]&gt; char-write-req 0x0043 56ff000000f0aa
+Characteristic value was written successfully
+[E0:E5:CF:AD:71:A0][LE]&gt; char-write-req 0x0043 5600ff0000f0aa
+Characteristic value was written successfully
+[E0:E5:CF:AD:71:A0][LE]&gt; char-write-req 0x0043 560000ff00f0aa
+Characteristic value was written successfully
+[E0:E5:CF:AD:71:A0][LE]&gt; char-write-req 0x0043 56ffffff00f0aa
+Characteristic value was written successfully
+[E0:E5:CF:AD:71:A0][LE]&gt; char-write-req 0x0043 56000000ff0faa
+Characteristic value was written successfully
+[E0:E5:CF:AD:71:A0][LE]&gt; char-write-req 0x0043 cc2433
+Characteristic value was written successfully
+[E0:E5:CF:AD:71:A0][LE]&gt; char-write-req 0x0043 cc2333
+Characteristic value was written successfully
+[E0:E5:CF:AD:71:A0][LE]&gt; char-write-req 0x0043 cc2433
+Characteristic value was written successfully
+[E0:E5:CF:AD:71:A0][LE]&gt; char-write-req 0x0043 cc2333
+</code></pre>
+
+					</div>
+				</section>
+
+ 
+ 			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://github.com/bmsleight/" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://twitter.com/bmsleight" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://uk.linkedin.com/in/brendan-sleight-845b9879" class="icon fa-linkedin"><span class="label">Facebook</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Brendan M. Sleight All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/jquery.scrollgress.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>
+
+ 

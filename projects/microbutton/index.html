@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Brendan Sleight - Microbutton</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+
+                <meta name="keywords" content="Brendan,Sleight,barwap,projects, Brendan M. Sleight">
+                <meta name="author" content="Brendan Sleight">
+	</head>
+      <body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+              <header id="header">
+					<h1><a href="/">BarWap</a> Brendan M. Sleight</h1>
+					<nav id="nav">
+						<ul>
+							<li>
+								<a href="/" class="icon fa-angle-down">Menu</a>
+								<ul> 
+                               
+                               
+                                   <li>
+									   <a href="../../about/"  >About This Website</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../professional-work/"  >Professional Work</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../projects/" class="icon fa-angle-left" >Projects</a>
+                                   
+                                     <ul>
+                                   <li>
+									   <a href="../../projects/boys-beds/"  >Boys Beds</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../projects/cuffelinks/"  >cuffelinks.com</a>
+                                   
+                               
+                                   <li class="active">
+									   <a href="../../projects/microbutton/" class="icon fa-angle-left" >Microbutton</a>
+                                   
+                                     <ul>
+                                   <li>
+									   <a href="../../projects/microbutton/making-of-microbutton/"  >Making of Microbutton</a>
+                                   
+                               </ul>
+                                   
+                               
+                                   <li>
+									   <a href="../../projects/nonilnilcom/"  >NoNilNil.com</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../projects/openscad-lasercut/"  >OpenSCAD Lasercut</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../projects/pewter-casting-with-pla/"  >Pewter Casting with PLA</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../projects/pixelate-toast/"  >Pixelate Toast</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../projects/printing-3d/"  >Printing (3d)</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../projects/roundabout/"  >Roundabout</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../projects/server-ash/"  >Server Ash</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../projects/shedshedshed/"  >ShedShedShed</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../projects/splendid-snap/"  >SplendidSnap.com</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../projects/traffic-lights-arduino/"  >Traffic Lights Arduino</a>
+                                   
+                               </ul>
+                                   
+                               
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</header>
+				
+			<!-- Banners and Body -->			
+			
+           
+				<section id="main" class="container">
+					<header>
+						<h2>Microbutton</h2>
+						<p>A simple small button, battery powered, to do a GET http</p>
+
+					</header>
+					<div class="box">
+                    <h3>Headline - Button: £4 &amp; Simple</h3>
+<p><iframe src="https://vine.co/v/56O0bEKgMpJ/embed/simple" width="300" height="300" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script></p>
+<p>So it is like the <a href="http://www.bbc.co.uk/news/technology-37224691">Amazon Dash Button</a> - which many have <a href="https://hackaday.com/tag/amazon-dash/">hacked</a>. What is so special; it is cheap and simple.  Off the shelf parts, ebay/aliexpress ~£4.00, replaceable batteries and simple to configure.</p>
+<p>How simple to configure ? :-</p>
+<ul>
+<li>Flash firmware to board</li>
+<li>Connect to access point MicroButton using password: microButton</li>
+<li>Go to <a href="http://192.168.4.1/">http://192.168.4.1/</a> and enter your SSID, password, and URL to get on button press</li>
+<li>Hit reset button</li>
+<li>... Thats it. </li>
+</ul>
+<p><iframe src="https://vine.co/v/56O06TzwwLJ/embed/simple" width="300" height="300" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script></p>
+<h3>Materials</h3>
+<ul>
+<li>NodeMCU -  ESP8266 development  board - NodeMCU, ~£2.50</li>
+<li>AAA x 2 Battery Holder ~£1.40</li>
+<li>AAA x 2 Batteries ~£0.10</li>
+<li>3D Printed Case - <a href="https://github.com/bmsleight/shedcode/blob/master/microbutton/case_esp8266.stl">https://github.com/bmsleight/shedcode/blob/master/microbutton/case_esp8266.stl</a></li>
+<li>Software - <a href="https://github.com/bmsleight/shedcode/tree/master/microbutton">https://github.com/bmsleight/shedcode/tree/master/microbutton</a></li>
+</ul>
+<h3>Configure</h3>
+<h4>Step 1 - Flash Board</h4>
+<pre><code class="lang-bash"># Four lines
+pip install esptool
+wget https://github.com/bmsleight/shedcode/raw/master/microbutton/firmware-combined.bin
+esptool.py --port /dev/ttyUSB0 erase_flash
+esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=8m 0 firmware-combined.bin
+</code></pre>
+
+
+<h4>Step 1 - Access Point</h4>
+<p>Connect to access point MicroButton-xxxxxx where the x’s are replaced with part of the MAC address of your device, using password: microButton (note upper case B). Go to <a href="http://192.168.4.1/">http://192.168.4.1/</a> and enter your SSID, password, and URL to get on button press.</p>
+<p><insert gif above>
+Hit reset button and we are off. Every time the reset button is press the URL hit be hit.</p>
+
+
+
+
+<span class="image left"><a href="./img_20161002_181410.jpg" ><img src="../../projects/microbutton/img_20161002_181410@300.jpg" alt="" /></a></span>
+
+
+
+<span class="image left"><a href="./img_20161002_181510.jpg" ><img src="../../projects/microbutton/img_20161002_181510@300.jpg" alt="" /></a></span>
+
+
+
+<span class="image left"><a href="./img_20161002_181543.jpg" ><img src="../../projects/microbutton/img_20161002_181543@300.jpg" alt="" /></a></span>
+
+
+
+<span class="image left"><a href="./img_20161002_181618.jpg" ><img src="../../projects/microbutton/img_20161002_181618@300.jpg" alt="" /></a></span>
+
+<h4>Making it look nicer</h4>
+<p>Solder AAA battery holder to the GND (black cable) and +3V (red cable) and print the case. Place battery holder in base, add the board on top using the mounting pins.  At the first part of the button to the upper case, then put cases together and add top of button.</p>
+<p>See - Making of Microbutton to found out more technical details and how the button works.</p>
+
+					</div>
+				</section>
+
+ 
+ 			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://github.com/bmsleight/" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://twitter.com/bmsleight" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://uk.linkedin.com/in/brendan-sleight-845b9879" class="icon fa-linkedin"><span class="label">Facebook</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Brendan M. Sleight All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/jquery.scrollgress.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>
+
+ 

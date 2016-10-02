@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Brendan Sleight - Making of Microbutton</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+
+                <meta name="keywords" content="Brendan,Sleight,barwap,projects, Brendan M. Sleight">
+                <meta name="author" content="Brendan Sleight">
+	</head>
+      <body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+              <header id="header">
+					<h1><a href="/">BarWap</a> Brendan M. Sleight</h1>
+					<nav id="nav">
+						<ul>
+							<li>
+								<a href="/" class="icon fa-angle-down">Menu</a>
+								<ul> 
+                               
+                               
+                                   <li>
+									   <a href="../../../about/"  >About This Website</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../professional-work/"  >Professional Work</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/" class="icon fa-angle-left" >Projects</a>
+                                   
+                                     <ul>
+                                   <li>
+									   <a href="../../../projects/boys-beds/"  >Boys Beds</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/cuffelinks/"  >cuffelinks.com</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/microbutton/" class="icon fa-angle-left" >Microbutton</a>
+                                   
+                                     <ul>
+                                   <li class="active">
+									   <a href="../../../projects/microbutton/making-of-microbutton/" class="icon fa-angle-left" >Making of Microbutton</a>
+                                   
+                                     <ul></ul>
+                                   
+                               </ul>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/nonilnilcom/"  >NoNilNil.com</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/openscad-lasercut/"  >OpenSCAD Lasercut</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/pewter-casting-with-pla/"  >Pewter Casting with PLA</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/pixelate-toast/"  >Pixelate Toast</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/printing-3d/"  >Printing (3d)</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/roundabout/"  >Roundabout</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/server-ash/"  >Server Ash</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/shedshedshed/"  >ShedShedShed</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/splendid-snap/"  >SplendidSnap.com</a>
+                                   
+                               
+                                   <li>
+									   <a href="../../../projects/traffic-lights-arduino/"  >Traffic Lights Arduino</a>
+                                   
+                               </ul>
+                                   
+                               
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</header>
+				
+			<!-- Banners and Body -->			
+			
+           
+				<section id="main" class="container">
+					<header>
+						<h2>Making of Microbutton</h2>
+						<p>More technical details of how the MicroButton works.</p>
+
+					</header>
+					<div class="box">
+                    
+
+<span class="image left"><a href="./img_20161002_202426.jpg" ><img src="../../../projects/microbutton/making-of-microbutton/img_20161002_202426@300.jpg" alt="" /></a></span>
+
+<h4>Firmware</h4>
+<p>The ESP8266 development board is running the wonderful <a href="http://micropython.org/">Micro Python</a>. As a general overview, the board sleeps in low power mode until the reset button is pressed. Then connects to the wifi network using values stored in config_mc.py, then do http_get(config_mc.resetURL) and machine.deepsleep(), sleeping the board in low power mode until the reset button is pressed. 
+<a href="https://github.com/bmsleight/shedcode/blob/master/microbutton/main.py">https://github.com/bmsleight/shedcode/blob/master/microbutton/main.py</a></p>
+<pre><code class="lang-python"># Micro Python
+do_connect(config_mc.ssid, config_mc.passwd)
+http_get(config_mc.resetURL)
+machine.deepsleep()
+</code></pre>
+<p>Much more tricks are used to make the configuration simple.  Normally Micro Python boots and set-ups a webconsole. <a href="http://docs.micropython.org/en/latest/esp8266/esp8266/general.html#boot-process">http://docs.micropython.org/en/latest/esp8266/esp8266/general.html#boot-process</a> I have changed this to run a mini webserver <a href="https://github.com/bmsleight/shedcode/blob/master/microbutton/inisetup.py">https://github.com/bmsleight/shedcode/blob/master/microbutton/inisetup.py</a></p>
+<h4>Fun Webserver in Micro Python</h4>
+<p>Micro Python on the ESP8266 does not include <a href="https://docs.python.org/2/library/urllib.html#urllib.urlencode">urlencode</a>. So extracting a string like http%3A%2F%2Fbarwap.com%2F%3Fencoded from a response on the very basic webserver is hard. However <a href="http://docs.micropython.org/en/latest/esp8266/library/ujson.html">JSON encoding and decoding is possible</a>. All I have to do is send JSON back to the webserver.</p>
+<p>We set the ESP8266 development board to be an access point, so no jquery - src="<a href="https://code.jquery.com/jquery-3.1.1.slim.min.js">https://code.jquery.com/jquery-3.1.1.slim.min.js</a>" and <a href="https://github.com/micropython/micropython/tree/master/examples/network">simple webserver</a> only accepts a 4096 bytes. The other <a href="https://github.com/micropython/micropython/blob/master/examples/network/http_server.py">example server</a> did not accept Content-Type:application/json very well.</p>
+<p><a href="http://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/intro.html">http://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/intro.html</a></p>
+
+					</div>
+				</section>
+
+ 
+ 			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://github.com/bmsleight/" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://twitter.com/bmsleight" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://uk.linkedin.com/in/brendan-sleight-845b9879" class="icon fa-linkedin"><span class="label">Facebook</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Brendan M. Sleight All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/jquery.scrollgress.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>
+
+ 
