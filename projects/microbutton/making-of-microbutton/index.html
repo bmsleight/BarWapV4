@@ -130,7 +130,35 @@ machine.deepsleep()
 <h4>Fun Webserver in Micro Python</h4>
 <p>Micro Python on the ESP8266 does not include <a href="https://docs.python.org/2/library/urllib.html#urllib.urlencode">urlencode</a>. So extracting a string like http%3A%2F%2Fbarwap.com%2F%3Fencoded from a response on the very basic webserver is hard. However <a href="http://docs.micropython.org/en/latest/esp8266/library/ujson.html">JSON encoding and decoding is possible</a>. All I have to do is send JSON back to the webserver.</p>
 <p>We set the ESP8266 development board to be an access point, so no jquery - src="<a href="https://code.jquery.com/jquery-3.1.1.slim.min.js">https://code.jquery.com/jquery-3.1.1.slim.min.js</a>" and <a href="https://github.com/micropython/micropython/tree/master/examples/network">simple webserver</a> only accepts a 4096 bytes. The other <a href="https://github.com/micropython/micropython/blob/master/examples/network/http_server.py">example server</a> did not accept Content-Type:application/json very well.</p>
-<p><a href="http://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/intro.html">http://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/intro.html</a></p>
+<p>So what can we do with a few bytes. We split the four inputs (SSID, Passwd, resetURL &amp; poweroffURL) and send them one at a time, given all the other padding, allowing a whopping 85 per field. Also, after every set - we just reply with a name of the next field, no reloading of the full page - took much of a hack to call it a full RESTful interface. On the last response we just hide the set button. Last of all remove much of the white space indenting to get a final squeeze.</p>
+<pre><code class="lang-html">&lt;script&gt;
+function sV() {
+    var v=document.getElementById(&#39;v&#39;).value;
+    var k=document.getElementById(&#39;k&#39;).value;
+    var obj ={};
+    obj[k] =v;
+    var j=JSON.stringify(obj);
+    var x=new XMLHttpRequest();
+    x.open(&quot;POST&quot;, &quot;/&quot;);
+    x.setRequestHeader(&#39;Content-Type&#39;, &#39;application/json; charset=UTF-8&#39;);
+    x.send(j);
+    x.onloadend = function () {
+        var r=(x.responseText);
+        if ( r == &quot;D&quot; ) {
+            document.getElementById(&quot;s&quot;).style.visibility = &quot;hidden&quot;
+            d = document.getElementById(&#39;l&#39;);
+            d.innerHTML = d.innerHTML + &#39;Set &#39; + j + &#39;&lt;br/&gt;Done&#39;;
+        } else {
+            d = document.getElementById(&#39;l&#39;);
+            d.innerHTML = d.innerHTML + &#39;Set &#39; + j + &#39;&lt;br/&gt;&#39;;
+            document.getElementById(&quot;n&quot;).innerHTML = r;
+            document.getElementById(&quot;v&quot;).value = &quot;&quot;;
+            document.getElementById(&quot;k&quot;).value = r;
+        }
+    }
+};
+&lt;/script&gt;
+</code></pre>
 
 					</div>
 				</section>

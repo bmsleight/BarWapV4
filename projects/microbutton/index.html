@@ -113,16 +113,13 @@
 					</header>
 					<div class="box">
                     <h3>Headline - Button: £4 &amp; Simple</h3>
-<p><iframe src="https://vine.co/v/56O0bEKgMpJ/embed/simple" width="300" height="300" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script></p>
+<p><span class="image left"><img src="../../projects/microbutton/record.gif" alt=""configure></span><iframe src="https://vine.co/v/56O0bEKgMpJ/embed/simple" width="300" height="300" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script></p>
 <p>So it is like the <a href="http://www.bbc.co.uk/news/technology-37224691">Amazon Dash Button</a> - which many have <a href="https://hackaday.com/tag/amazon-dash/">hacked</a>. What is so special; it is cheap and simple.  Off the shelf parts, ebay/aliexpress ~£4.00, replaceable batteries and simple to configure.</p>
-<p>How simple to configure ? :-</p>
-<ul>
-<li>Flash firmware to board</li>
-<li>Connect to access point MicroButton using password: microButton</li>
-<li>Go to <a href="http://192.168.4.1/">http://192.168.4.1/</a> and enter your SSID, password, and URL to get on button press</li>
-<li>Hit reset button</li>
-<li>... Thats it. </li>
-</ul>
+<p>How simple to configure ? :-
+Flash firmware to board<br/>
+Connect to access point MicroButton using password: microButton<br/>
+Go to <a href="http://192.168.4.1/">http://192.168.4.1/</a> and enter your SSID, password, and URL to get on button press<br/>
+Hit reset button<br/></p>
 <p><iframe src="https://vine.co/v/56O06TzwwLJ/embed/simple" width="300" height="300" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script></p>
 <h3>Materials</h3>
 <ul>
@@ -142,10 +139,10 @@ esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=8m 0 firmw
 </code></pre>
 
 
-<h4>Step 1 - Access Point</h4>
+<h4>Step 2 - Access Point</h4>
 <p>Connect to access point MicroButton-xxxxxx where the x’s are replaced with part of the MAC address of your device, using password: microButton (note upper case B). Go to <a href="http://192.168.4.1/">http://192.168.4.1/</a> and enter your SSID, password, and URL to get on button press.</p>
 <p><insert gif above>
-Hit reset button and we are off. Every time the reset button is press the URL hit be hit.</p>
+Hit reset button and we are off. Every time the reset button is pressed the resetURL will called.</p>
 
 
 
@@ -166,7 +163,8 @@ Hit reset button and we are off. Every time the reset button is press the URL hi
 
 <h4>Making it look nicer</h4>
 <p>Solder AAA battery holder to the GND (black cable) and +3V (red cable) and print the case. Place battery holder in base, add the board on top using the mounting pins.  At the first part of the button to the upper case, then put cases together and add top of button.</p>
-<p>See - Making of Microbutton to found out more technical details and how the button works.</p>
+<p><a href="./making-of-microbutton/">See - Making of Microbutton to found out more technical details and how the button works.</a>
+<br/><br/><br/><br/><br/><br/></p>
 
 					</div>
 				</section>
