@@ -1,0 +1,70 @@
+title: Making of Microbutton
+---
+subtitle:
+
+More technical details of how the MicroButton works. 
+---
+body:
+
+#### featured-image ####
+image: img_20161002_202426.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./img_20161002_202426.jpg
+#### text-block ####
+text:
+
+#### Firmware
+
+The ESP8266 development board is running the wonderful [Micro Python](http://micropython.org/). As a general overview, the board sleeps in low power mode until the reset button is pressed. Then connects to the wifi network using values stored in config_mc.py, then do http_get(config_mc.resetURL) and machine.deepsleep(), sleeping the board in low power mode until the reset button is pressed. 
+https://github.com/bmsleight/shedcode/blob/master/microbutton/main.py
+
+```python
+# Micro Python
+do_connect(config_mc.ssid, config_mc.passwd)
+http_get(config_mc.resetURL)
+machine.deepsleep()
+```
+
+Much more tricks are used to make the configuration simple.  Normally Micro Python boots and set-ups a webconsole. http://docs.micropython.org/en/latest/esp8266/esp8266/general.html#boot-process I have changed this to run a mini webserver https://github.com/bmsleight/shedcode/blob/master/microbutton/inisetup.py
+
+#### Fun Webserver in Micro Python
+
+Micro Python on the ESP8266 does not include [urlencode](https://docs.python.org/2/library/urllib.html#urllib.urlencode). So extracting a string like http%3A%2F%2Fbarwap.com%2F%3Fencoded from a response on the very basic webserver is hard. However [JSON encoding and decoding is possible](http://docs.micropython.org/en/latest/esp8266/library/ujson.html). All I have to do is send JSON back to the webserver. 
+
+We set the ESP8266 development board to be an access point, so no jquery - src="https://code.jquery.com/jquery-3.1.1.slim.min.js" and [simple webserver](https://github.com/micropython/micropython/tree/master/examples/network) only accepts a 4096 bytes. The other [example server](https://github.com/micropython/micropython/blob/master/examples/network/http_server.py) did not accept Content-Type:application/json very well.
+
+So what can we do with a few bytes. We split the four inputs (SSID, Passwd, resetURL & poweroffURL) and send them one at a time, given all the other padding, allowing a whopping 85 per field. Also, after every set - we just reply with a name of the next field, no reloading of the full page - took much of a hack to call it a full RESTful interface. On the last response we just hide the set button. Last of all remove much of the white space indenting to get a final squeeze. 
+
+```html
+<script>
+function sV() {
+    var v=document.getElementById('v').value;
+    var k=document.getElementById('k').value;
+    var obj ={};
+    obj[k] =v;
+    var j=JSON.stringify(obj);
+    var x=new XMLHttpRequest();
+    x.open("POST", "/");
+    x.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+    x.send(j);
+    x.onloadend = function () {
+        var r=(x.responseText);
+        if ( r == "D" ) {
+            document.getElementById("s").style.visibility = "hidden"
+            d = document.getElementById('l');
+            d.innerHTML = d.innerHTML + 'Set ' + j + '<br/>Done';
+        } else {
+            d = document.getElementById('l');
+            d.innerHTML = d.innerHTML + 'Set ' + j + '<br/>';
+            document.getElementById("n").innerHTML = r;
+            document.getElementById("v").value = "";
+            document.getElementById("k").value = r;
+        }
+    }
+};
+</script>
+```

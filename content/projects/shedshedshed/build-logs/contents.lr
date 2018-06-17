@@ -1,0 +1,90 @@
+title: Build Logs
+---
+subtitle:
+
+Detailed build log, mainly time-lapses, videos and photos of the construction. 
+---
+body:
+
+#### featured-image ####
+image: foursides.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./build-log-shedshedshed/
+#### text-block ####
+text:
+
+#### Building the Framework
+
+[Details of building the base and make the stud work.](./build-log-shedshedshed/)
+<br/><br/><br/>
+<br/><br/><br/>
+#### featured-image ####
+image: shedbeernextdoor.jpeg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./build-log-shedshedshed-cladding/
+#### text-block ####
+text:
+
+#### Building the cladding & Roof
+
+[Some vlogs of the cladding and roof](./build-log-shedshedshed-cladding)
+<br/><br/><br/>
+<br/><br/><br/>
+#### featured-image ####
+image: junction_box.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./electrics/
+#### text-block ####
+text:
+
+#### Building the Electrics
+
+[Details of the electrics to the shed](./electrics/)
+<br/><br/><br/>
+<br/><br/><br/>
+#### featured-image ####
+image: inside.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./inside/
+#### text-block ####
+text:
+
+#### Inside the shed
+
+[Kitting out the inside of the shed](./inside/)
+<br/><br/><br/>
+<br/><br/><br/>
+#### featured-image ####
+image: furniture.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./furniture/
+#### text-block ####
+text:
+
+#### Furniture
+
+[Making the furniture in the shed](./furniture/)
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/>
+[Return to Shed overview](../)

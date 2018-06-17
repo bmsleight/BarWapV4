@@ -1,0 +1,23 @@
+title: Blocks In Brython
+---
+body:
+
+#### featured-image ####
+image: screenshot.png
+----
+align: left
+----
+thumbsize: 500
+----
+imagelink: https://bmsleight.github.io/brython-blocks/
+#### text-block ####
+text:
+
+I love the concept of [Brython](http://brython.info/) a Python 3 implementation for client-side web programming. 
+
+I have made a quick [blocks game](https://bmsleight.github.io/brython-blocks/) which runs in the browser, - written not in Javascript but [in Python](https://github.com/bmsleight/brython-blocks/blob/master/blocks.py). 
+
+[Blocks Game - https://bmsleight.github.io/brython-blocks/](https://bmsleight.github.io/brython-blocks/) and [code - https://github.com/bmsleight/brython-blocks](https://github.com/bmsleight/brython-blocks) is on GiHub. I used for the css side [mincss](https://mincss.com/)  
+<br/><br/><br/><br/><br/><br/>
+---
+subtitle: Blocks running from the browser using Brython

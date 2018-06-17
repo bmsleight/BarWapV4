@@ -1,0 +1,45 @@
+_model: index
+---
+subtitle: The website of Brendan M. Sleight
+---
+title: BarWap
+---
+button: About BarWap
+---
+buttonlink: /about/
+---
+secondblurb: A central repository giving links to photos, profile, projects and software.
+---
+secondtitle: A simple portfolio site
+---
+body:
+
+#### box-special ####
+image: New_Red-Amber.jpg
+----
+boxtitle: Hobbies and Projects
+----
+boxblurb: A collection of some of my hobby projects, anything from building a Bed Bus, 3d Printing to traffic light cufflinks. Just space to store references and links and I am getting too old to blog.
+----
+boxlinktext: Learn More
+----
+boxlink: /projects/
+----
+align: left
+#### box-special ####
+image: BMS_noMIC.jpg
+----
+boxtitle: Professional Work
+----
+boxblurb:
+
+I am Chartered Engineer and a fellow of Chartered
+Institution of Highways & Transportation (CIHT). 
+A Chief Engineer at Transport for London leading teams that install new or modify traffic lights in Greater
+London. 
+----
+boxlinktext: Learn More
+----
+boxlink: /professional-work/
+----
+align: right

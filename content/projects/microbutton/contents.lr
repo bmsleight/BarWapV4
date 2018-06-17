@@ -1,0 +1,89 @@
+title: Microbutton
+---
+subtitle: A simple small button, battery powered, to do a GET http
+---
+body:
+
+#### text-block ####
+text:
+
+### Headline - Button: £4 & Simple
+
+<span class="image left"><img src="../../projects/microbutton/record.gif" alt=""configure></span><iframe src="https://vine.co/v/56O0bEKgMpJ/embed/simple" width="300" height="300" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+
+So it is like the [Amazon Dash Button](http://www.bbc.co.uk/news/technology-37224691) - which many have [hacked](https://hackaday.com/tag/amazon-dash/). What is so special; it is cheap and simple.  Off the shelf parts, ebay/aliexpress ~£4.00, replaceable batteries and simple to configure.
+
+How simple to configure ? :-
+Flash firmware to board<br/>
+Connect to access point MicroButton using password: microButton<br/>
+Go to http://192.168.4.1/ and enter your SSID, password, and URL to get on button press<br/>
+Hit reset button<br/>
+
+<iframe src="https://vine.co/v/56O06TzwwLJ/embed/simple" width="300" height="300" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+
+### Materials
+
+*  NodeMCU -  ESP8266 development  board - NodeMCU, ~£2.50
+* AAA x 2 Battery Holder ~£1.40
+* AAA x 2 Batteries ~£0.10
+* 3D Printed Case - https://github.com/bmsleight/shedcode/blob/master/microbutton/case_esp8266.stl
+* Software - https://github.com/bmsleight/shedcode/tree/master/microbutton
+
+###  Configure
+
+#### Step 1 - Flash Board
+```bash
+# Four lines
+pip install esptool
+wget https://github.com/bmsleight/shedcode/raw/master/microbutton/firmware-combined.bin
+esptool.py --port /dev/ttyUSB0 erase_flash
+esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=8m 0 firmware-combined.bin
+```
+#### text-block ####
+text:
+
+#### Step 2 - Access Point
+Connect to access point MicroButton-xxxxxx where the x’s are replaced with part of the MAC address of your device, using password: microButton (note upper case B). Go to http://192.168.4.1/ and enter your SSID, password, and URL to get on button press.
+<insert gif above>
+Hit reset button and we are off. Every time the reset button is pressed the resetURL will called.  
+#### featured-image ####
+image: img_20161002_181410.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./img_20161002_181410.jpg
+#### featured-image ####
+image: img_20161002_181510.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./img_20161002_181510.jpg
+#### featured-image ####
+image: img_20161002_181543.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./img_20161002_181543.jpg
+#### featured-image ####
+image: img_20161002_181618.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./img_20161002_181618.jpg
+#### text-block ####
+text:
+
+#### Making it look nicer
+
+Solder AAA battery holder to the GND (black cable) and +3V (red cable) and print the case. Place battery holder in base, add the board on top using the mounting pins.  At the first part of the button to the upper case, then put cases together and add top of button.
+
+[See - Making of Microbutton to found out more technical details and how the button works.](./making-of-microbutton/)
+<br/><br/><br/><br/><br/><br/>

@@ -5,6 +5,22 @@ title: Projects
 body:
 
 #### featured-image ####
+image: screenshot.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./brython-blocks/
+#### text-block ####
+text:
+
+### Blocks in Brython
+
+[Blocks in the browser using Brython.](./brython-blocks/) 
+<br/><br/><br/><br/><br/><br/>
+<br/><br/>
+#### featured-image ####
 image: 0.jpg
 ----
 align: left
@@ -34,6 +50,21 @@ text:
 ### Cuffelinks.com
 
 [Documenting my fun in developing electronic cufflinks aka cuffelinks](./cuffelinks)
+<br/><br/><br/><br/><br/><br/>
+#### featured-image ####
+image: img_20161002_202426.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./microbutton
+#### text-block ####
+text:
+
+### Micro Button
+
+[A simple small button, battery powered, to do a GET http. Costing £4 with off the shelf parts.](./microbutton)
 <br/><br/><br/><br/><br/><br/>
 #### featured-image ####
 image: logo.png
@@ -143,6 +174,21 @@ text:
 [Ash is my main home server ](./splendid-snap/). It hosts a few virtual machines (including this website), it also a good point to document the configuration somewhere; as the [source of this website is on git hub](https://github.com/bmsleight/BarWapV4) this also makes a nice config back-up.  
 <br/><br/><br/><br/><br/>
 #### featured-image ####
+image: animaion1.gif
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./shedshedshed/
+#### text-block ####
+text:
+
+###Shed Shed Shed
+
+I need a man-cave, so I can build my projects but I need to move out of the loft. Time to build a man-cave.
+<br/><br/><br/><br/><br/><br/>
+#### featured-image ####
 image: splendiddoodleicons_by_bmsleight_17.png
 ----
 align: left
@@ -174,7 +220,29 @@ text:
 <br/><br/><br/><br/><br/><br/>
 <br/><br/><br/><br/><br/><br/>
 <br/><br/><br/><br/><br/><br/>
+#### featured-image ####
+image: card_back.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: 
+#### text-block ####
+text:
+
+### Tube Top Trumps
+
+[Tube Top Trumps](./tube-top-trumps/)
+<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
 ---
 wubtitle: See [Cuffelink](http://cuffelinks.com/)
 ---
-subtitle: Lots of details about my hobbies and projects
+subtitle:
+
+Lots of details about my hobbies and projects
+
+
+

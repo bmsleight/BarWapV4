@@ -1,0 +1,97 @@
+title: Plan & Set-up
+---
+body:
+
+#### featured-image ####
+image: industral_esp.jpg
+----
+align: right
+----
+thumbsize: 300
+----
+imagelink: 
+#### featured-image ####
+image: industral_esp2.jpg
+----
+align: right
+----
+thumbsize: 100
+----
+imagelink: 
+#### featured-image ####
+image: industral_esp3.jpg
+----
+align: right
+----
+thumbsize: 100
+----
+imagelink: 
+#### text-block ####
+text:
+
+[Return to main project page](../)
+
+I need need to build my projects away from the loft. Time to build a man-cave.
+
+#### Pre-work
+
+Got the old shed removed (and the junk - thanks http://kgwastedisposal.com/). Did some industrial espionage and pricing on other Shed.  Worked out that cost for a pre-built basic shed in a similar size,  would equal how I wanted  in terms of size,  thermal isolation and power supply - if I design & built myself.  
+
+<br/><br/><br/><br/><br/><br/>
+#### featured-image ####
+image: animaion1.gif
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: 
+#### text-block ####
+text:
+
+#### Step 1 - OpenSCAD
+The first step was to build a [model in OpenScad](https://github.com/bmsleight/shedshed/blob/master/shedshedshed.scad), after a couple of [iterations](https://github.com/bmsleight/shedshed) we got to a final version that should fit in to the space.  The advantage of modelling the shed in OpenSCAD is that I can 3D-Print some useful parts.
+
+#### Printed Scaled-down Shed
+The first useful part I can print is a model of the shed its self. 
+#### featured-image ####
+image: shed_rotate_sm.gif
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: 
+#### featured-image ####
+image: shed_context1.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./shed_context1.jpg
+#### featured-image ####
+image: shed_context2.jpg
+----
+align: left
+----
+thumbsize: 100
+----
+imagelink: ./shed_context2.jpg
+#### featured-image ####
+image: shed_context3.jpg
+----
+align: left
+----
+thumbsize: 100
+----
+imagelink: ./shed_context3.jpg
+#### text-block ####
+text:
+
+<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/>
+This allows me to play with the sizes, shape and look of the shed pre-build.  I can also see how it would look in the garden (sort-of).
+<br/><br/><br/>
+[Return to main project page](../)
+

@@ -1,0 +1,159 @@
+title: Automation
+---
+body:
+
+#### text-block ####
+text:
+
+#### Hardware
+
+* Raspberry Pi 3 Model b. [Key: built in Bluetooth Low Energy (BLE)]
+* Light-bulbs - [9W Smart Wireless LED Light Bluetooth Control] via ebay £9 generic Chinese. "Triones"
+* Smart Plug - Kankun K1
+* Electronic Door Lock - via eBay £29 generic Chinese, with no power lock is closed.
+
+The Raspberry PI (aka http://blueberrypi.lan/) is server for the lights, smart plug and lock.
+#### featured-image ####
+image: screenshot.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: 
+#### text-block ####
+text:
+
+#### Front End & Index.html
+
+The front end is a nice webpage. [Source code](https://github.com/bmsleight/shedcode/blob/master/control/index.html).   The [style sheets](https://github.com/bmsleight/shedcode/tree/master/control/css) are good old bootstrap, using [sticky-footer.css](https://getbootstrap.com/examples/sticky-footer/).  The body is place holders div.
+```
+<body>
+    <div class="container">
+      <div class="page-header">
+        <h1>Take Control</h1>
+      </div>
+      <p class="lead"></p>
+      <div id="lights"></div>
+      <div id="lights-all"></div>
+      <div id="locks"></div>
+      <h3>Log</h2>
+      <p id="comments"></p
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Control Man Cave</p>
+      </div>
+    </footer>
+</body>
+```
+#### text-block ####
+text:
+
+The elements are then updated using javascript. First the [config file](https://github.com/bmsleight/shedcode/blob/master/control/config.json) is loaded via ajax
+```
+.ajax( { url: 'config', dataType: 'json' } )
+```
+Javascript then parses the json and generates the buttons. 
+#### text-block ####
+text:
+
+#### Server
+
+The server is based upon [CherryPy](http://www.cherrypy.org/). Source code - https://github.com/bmsleight/shedcode/blob/master/control/lights.py
+
+```
+class Control(object):
+    @cherrypy.expose
+    def index(self):
+        return open('index.html')
+    @cherrypy.expose
+    def config(self):
+        return open('config.json')
+
+@cherrypy.expose
+class ControlLightWebService(object):
+    @cherrypy.tools.accept(media='text/plain')
+    def PUT(self, action, address):
+        control_light(address, action)
+        return "Ok"
+
+@cherrypy.expose
+class ControlLockWebService(object):
+    @cherrypy.tools.accept(media='text/plain')
+    def PUT(self, action, address):
+        control_lock(address, action)
+        return "Ok"
+```
+#### text-block ####
+text:
+
+#### Plugs
+
+https://github.com/homedash/kankun-json
+http://www.anites.com/2015/01/hacking-kankun-smart-wifi-plug.html
+```
+curl -H "Content-Type: application/json"   http://192.168.1.141/cgi-bin/json.cgi?set=off
+```
+#### text-block ####
+text:
+
+
+#### Rough notes so far
+
+####Bluetooth
+
+With help from - https://github.com/madhead/saberlight/blob/master/protocols/Triones/protocol.md
+
+```
+pi@blueberry:~ $ sudo gatttool -I E0:E5:CF:AD:71:A0
+[                 ][LE]> connect E0:E5:CF:AD:71:A0
+Attempting to connect to E0:E5:CF:AD:71:A0
+Connection successful
+[E0:E5:CF:AD:71:A0][LE]> char
+char-desc        char-read-hnd    char-read-uuid   char-write-cmd   char-write-req   characteristics  
+[E0:E5:CF:AD:71:A0][LE]> char-write-req 
+Usage: char-write-req <handle> <new value>
+[E0:E5:CF:AD:71:A0][LE]> help
+help                                           Show this help
+exit                                           Exit interactive mode
+quit                                           Exit interactive mode
+connect         [address [address type]]       Connect to a remote device
+disconnect                                     Disconnect from a remote device
+primary         [UUID]                         Primary Service Discovery
+included        [start hnd [end hnd]]          Find Included Services
+characteristics [start hnd [end hnd [UUID]]]   Characteristics Discovery
+char-desc       [start hnd] [end hnd]          Characteristics Descriptor Discovery
+char-read-hnd   <handle>                       Characteristics Value/Descriptor Read by handle
+char-read-uuid  <UUID> [start hnd] [end hnd]   Characteristics Value/Descriptor Read by UUID
+char-write-req  <handle> <new value>           Characteristic Value Write (Write Request)
+char-write-cmd  <handle> <new value>           Characteristic Value Write (No response)
+sec-level       [low | medium | high]          Set security level. Default: low
+mtu             <value>                        Exchange MTU for GATT/ATT
+[E0:E5:CF:AD:71:A0][LE]> char-write-req 0x0043 56ffffff00f0aa
+Characteristic value was written successfull
+
+[E0:E5:CF:AD:71:A0][LE]> char-write-req 0x0043 56000000ff0faa
+Characteristic value was written successfully
+[E0:E5:CF:AD:71:A0][LE]> char-write-req 0x0043 56ff000000f0aa
+Characteristic value was written successfully
+[E0:E5:CF:AD:71:A0][LE]> char-write-req 0x0043 5600ff0000f0aa
+Characteristic value was written successfully
+[E0:E5:CF:AD:71:A0][LE]> char-write-req 0x0043 560000ff00f0aa
+Characteristic value was written successfully
+[E0:E5:CF:AD:71:A0][LE]> char-write-req 0x0043 56ffffff00f0aa
+Characteristic value was written successfully
+[E0:E5:CF:AD:71:A0][LE]> char-write-req 0x0043 56000000ff0faa
+Characteristic value was written successfully
+[E0:E5:CF:AD:71:A0][LE]> char-write-req 0x0043 cc2433
+Characteristic value was written successfully
+[E0:E5:CF:AD:71:A0][LE]> char-write-req 0x0043 cc2333
+Characteristic value was written successfully
+[E0:E5:CF:AD:71:A0][LE]> char-write-req 0x0043 cc2433
+Characteristic value was written successfully
+[E0:E5:CF:AD:71:A0][LE]> char-write-req 0x0043 cc2333
+```
+---
+subtitle:
+
+Details of how the Shed is automated, the code used to control light, locks and printers. 

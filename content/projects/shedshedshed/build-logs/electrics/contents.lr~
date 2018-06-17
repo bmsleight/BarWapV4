@@ -1,0 +1,190 @@
+title: Electrics
+---
+subtitle:
+
+Some details on the electrics in the shed - basically build notes. 
+---
+body:
+
+#### featured-image ####
+image: sketch1.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./sketch1.png
+#### featured-image ####
+image: existingbox.jpg
+----
+align: right
+----
+thumbsize: 100
+----
+imagelink: ./existingbox.jpg
+#### featured-image ####
+image: mcb.jpg
+----
+align: right
+----
+thumbsize: 100
+----
+imagelink: ./mcb.jpg
+#### text-block ####
+text:
+
+#### Rough Design Sketch.
+
+Sketch via [tinkercad](https://www.tinkercad.com). Two lighting points, two of triple double gang sockets (with built in USB) and a doubel docket to power the telly.  Planning to use easybulb.com / limitlessled.com/ / mi-light to control the lights - hence no physical wired lighting switches. 
+
+~~At the moment the limiting factor is the 6A MCB on my house's consumer unit that [feeds outside](https://imgur.com/a/RQNy2).~~ New plan, use a plug connected to an existing socket, not a fixed circuit under [part p](https://www.google.co.uk/search?q=part+p).   
+#### featured-image ####
+image: downwards_hold.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: 
+#### featured-image ####
+image: armoured_cable_prep2.jpg
+----
+align: right
+----
+thumbsize: 300
+----
+imagelink: 
+#### text-block ####
+text:
+
+#### Run cable
+
+The first step was to drill a hole, in a cavity wall - two brick thickness + air gap. Thanks to [Ben](https://twitter.com/dbrb2) for the loan of Drill and drill bit.  You not that the hole is downward, to reduce any water inlet.   I had some nice orange cable from [PVG](https://play.google.com/store/apps/developer?id=PVG&hl=en_GB). 
+#### featured-image ####
+image: final4.jpg
+----
+align: right
+----
+thumbsize: 100
+----
+imagelink: ./final4.jpg
+#### featured-image ####
+image: final3.jpg
+----
+align: right
+----
+thumbsize: 100
+----
+imagelink: ./final3.jpg
+#### featured-image ####
+image: final_2.jpg
+----
+align: right
+----
+thumbsize: 100
+----
+imagelink: ./final_2.jpg
+#### featured-image ####
+image: final1.jpg
+----
+align: right
+----
+thumbsize: 100
+----
+imagelink: ./final1.jpg
+#### text-block ####
+text: I used this [Great guide](http://wiki.diyfaq.org.uk/index.php/Terminating_SWA) and advice from PVG to terminate the SWA .
+#### featured-image ####
+image: eli.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./eli.jpg
+#### text-block ####
+text:
+
+I even ran a quick Earth Loop Impedance test, 0.59Ω compared with 0.39Ω - before the extension. 
+
+#### Internal Cabling
+
+Running internal cabling. Inside the timber frame work. As I am installing the cable, without ducting, next to the thermal insulation - I when over spec and used Blue 3183AG 3 Core 2.5mm cable. 
+<br/><br/><br/>
+#### text-block ####
+text:
+
+#### First Overhead Light
+
+Using a [£3 Bulk Head](http://www.diy.com/departments/bq-taro-white-60w-mains-powered-bulkhead-wall-light/198569_BQ.prd) wall light with a bluetooth controlled LED lamp. See [Automation](../../automation/) for more details about the lights control.
+#### featured-image ####
+image: bare_first_light2.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./bare_first_light2.jpg
+#### featured-image ####
+image: light_cover.jpg
+----
+align: left
+----
+thumbsize: 100
+----
+imagelink: ./light_cover.jpg
+#### text-block ####
+text: <iframe src="https://vine.co/v/5HTmuvDUA01/embed/simple" width="300" height="300" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+#### text-block ####
+text: [Return to main Build Log page](../)
+
+Further sockets, jucntion boxes and light now installed. 
+
+#### featured-image ####
+image: second_light_furtherback.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./second_light_furtherback.jpg
+#### featured-image ####
+image: second_socket.jpg
+----
+align: left
+----
+thumbsize: 100
+----
+imagelink: ./second_socket.jpg
+#### featured-image ####
+image: third_socket.jpg
+----
+align: left
+----
+thumbsize: 100
+----
+imagelink: ./third_socket.jpg
+#### text-block ####
+text:
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/><br/>
+
+#### featured-image ####
+image: waco_connectors.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./waco_connectors.jpg
+#### text-block ####
+text:
+
+#### Finished
+
+Did a big push and finished the rest of wiring within one evening. What made it so quick and simple were the [Wago Connectors](http://www.screwfix.com/p/3-way-lever-connector-222-series-pack-of-50/76776) - this video: https://www.youtube.com/watch?v=_KhBoxgyXgI explains it well. Throw away your terminal block and use wago connectors. 
+
+<br/><br/><br/>
+<br/><br/><br/>
+

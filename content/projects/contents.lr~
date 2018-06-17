@@ -1,0 +1,210 @@
+_model: page
+---
+title: Projects
+---
+body:
+
+#### featured-image ####
+image: 0.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./boys-beds/
+#### text-block ####
+text:
+
+### Boys Beds
+
+[A proper engineering solution to limited space.](./boys-beds/)
+<br/><br/><br/><br/><br/><br/>
+<br/><br/>
+#### featured-image ####
+image: New_Red-Amber.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./cuffelinks
+#### text-block ####
+text:
+
+### Cuffelinks.com
+
+[Documenting my fun in developing electronic cufflinks aka cuffelinks](./cuffelinks)
+<br/><br/><br/><br/><br/><br/>
+#### featured-image ####
+image: logo.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./nonilnilcom/
+#### text-block ####
+text:
+
+NoNilNil.com
+
+[This is a fun challenge between friends to see if they can pick each week a football game that does not end up nil nil.](./nonilnilcom/)
+<br/><br/><br/><br/><br/><br/>
+#### featured-image ####
+image: example-004.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./openscad-lasercut/
+#### text-block ####
+text:
+
+### OpenSCAD Lasercut
+
+[The key feature is to generate a 2d files automatically from the 3d-model](./openscad-lasercut/)
+<br/><br/><br/><br/><br/><br/><br/><br/>
+#### featured-image ####
+image: cufflink.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./pewter-casting-with-pla
+#### text-block ####
+text:
+
+### Pewter Casting With PLA
+
+[I discovered (by accident) a new way of doing Metal Casting.](./pewter-casting-with-pla)
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+#### featured-image ####
+image: pt.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./pixelate-toast
+#### text-block ####
+text:
+
+### Pixelate Toast
+
+[The idea is to mix a few ingredients; Bread, GNU/Linux, Arduino, Wifi to serve a website](./pixelate-toast)
+<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
+#### featured-image ####
+image: IMG_20160312_224121.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./printing-3d/
+#### text-block ####
+text:
+
+### Printing 3d
+
+Collection of 3d printed items on my printrbot
+
+<br/><br/><br/><br/><br/><br/>
+#### featured-image ####
+image: HugRoundabout.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./roundabout/
+#### text-block ####
+text:
+
+### Roundabout 
+
+Connor likes roundabouts, roundabouts are expensive to buy and you do not get much for your money. Time to get building …
+<br/><br/><br/><br/><br/><br/><br/>
+#### featured-image ####
+image: server-ash.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./server-ash/
+#### text-block ####
+text:
+
+### Server Ash
+
+[Ash is my main home server ](./splendid-snap/). It hosts a few virtual machines (including this website), it also a good point to document the configuration somewhere; as the [source of this website is on git hub](https://github.com/bmsleight/BarWapV4) this also makes a nice config back-up.  
+<br/><br/><br/><br/><br/>
+#### featured-image ####
+image: animaion1.gif
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./shedshedshed/
+#### text-block ####
+text:
+
+###Shed Shed Shed
+
+I need a man-cave, so I can build my projects but I need to move out of the loft. Time to build a man-cave.
+<br/><br/><br/><br/><br/><br/>
+#### featured-image ####
+image: splendiddoodleicons_by_bmsleight_17.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./splendid-snap/
+#### text-block ####
+text:
+
+### Splendid Snap .com
+
+[Splendid Snap is a group card game.](./splendid-snap/). Try the Pokemon and Sheep versions!
+<br/><br/><br/><br/><br/><br/>
+#### featured-image ####
+image: ats.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./traffic-lights-arduino/
+#### text-block ####
+text:
+
+### Traffic Lights Arduino
+
+[Arduino running some traffic lights](./traffic-lights-arduino/)
+<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
+#### featured-image ####
+image: img_20161002_202426.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: 
+#### text-block ####
+text:
+
+### Micro Button
+
+A simple small button, battery powered, to do a GET http. Costing £4 with off the shelf parts.
+<br/><br/><br/><br/><br/><br/>
+---
+wubtitle: See [Cuffelink](http://cuffelinks.com/)
+---
+subtitle: Lots of details about my hobbies and projects

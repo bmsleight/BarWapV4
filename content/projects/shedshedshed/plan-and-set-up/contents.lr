@@ -1,0 +1,96 @@
+title: Plan & Set-up
+---
+body:
+
+#### featured-image ####
+image: industral_esp.jpg
+----
+align: right
+----
+thumbsize: 300
+----
+imagelink: ./industral_esp.jpg
+#### featured-image ####
+image: industral_esp2.jpg
+----
+align: right
+----
+thumbsize: 100
+----
+imagelink: ./industral_esp2.jpg
+#### featured-image ####
+image: industral_esp3.jpg
+----
+align: right
+----
+thumbsize: 100
+----
+imagelink: ./industral_esp3.jpg
+#### text-block ####
+text:
+
+I need need to build my projects away from the loft. Time to build a man-cave.
+
+#### Pre-work
+
+Got the old shed removed (and the junk - thanks http://kgwastedisposal.com/). Did some industrial espionage and pricing on other Shed. [Local shed shop; google maps ](https://www.google.co.uk/maps/@51.409949,-0.1621097,3a,75y,256.25h,97.19t/data=!3m6!1e1!3m4!1sCg0LKZJ5p0WS83GfPUmWKg!2e0!7i13312!8i6656).  Worked out that cost  ([~£1,500 Pent Style](http://www.the-shed-centre.co.uk/product_addbasket.asp?pid=214&Submit=Go) ) for a pre-built basic shed which is too long and thin. I wanted 17 feet by 6.5 feet not 18 feet by 6 feet.  My rough estimates for a similar size, with good thermal isolation and power supply would be cheaper - if I design & built myself. 
+
+<br/><br/><br/><br/><br/><br/>
+#### featured-image ####
+image: animaion1.gif
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: 
+#### text-block ####
+text:
+
+#### Step 1 - OpenSCAD
+The first step was to build a [model in OpenScad](https://github.com/bmsleight/shedshed/blob/master/shedshedshed.scad), after a couple of [iterations](https://github.com/bmsleight/shedshed) we got to a final version that should fit in to the space.  The advantage of modelling the shed in OpenSCAD is that I can 3D-Print some useful parts.
+
+#### Printed Scaled-down Shed
+The first useful part I can print is a model of the shed its self. 
+#### featured-image ####
+image: shed_rotate_sm.gif
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: 
+#### featured-image ####
+image: shed_context1.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./shed_context1.jpg
+#### featured-image ####
+image: shed_context2.jpg
+----
+align: left
+----
+thumbsize: 100
+----
+imagelink: ./shed_context2.jpg
+#### featured-image ####
+image: shed_context3.jpg
+----
+align: left
+----
+thumbsize: 100
+----
+imagelink: ./shed_context3.jpg
+#### text-block ####
+text:
+
+<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/>
+This allows me to play with the sizes, shape and look of the shed pre-build.  I can also see how it would look in the garden (sort-of).
+<br/><br/><br/>
+[Return to main project page](../)
+---
+subtitle: The background to building the ShedShedShed

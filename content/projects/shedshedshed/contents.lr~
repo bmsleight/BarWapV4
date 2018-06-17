@@ -1,0 +1,250 @@
+title: ShedShedShed
+---
+subtitle: Making my Man Cave
+---
+body:
+ 
+
+#### featured-image ####
+image: animaion1.gif
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink:
+
+#### text-block ####
+text:
+
+### Plan & Set-up
+Using OpenSCAD and a 3D Printed Scaled-down Shed.
+<br/><br/><br/>
+<br/>
+
+#### featured-image ####
+image: foursides.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink:
+
+#### text-block ####
+text:
+
+### Building Log
+Detailed build log, mainly timelapses, videos and photos of the construction.
+<br/><br/><br/>
+<br/><br/><br/>
+
+#### featured-image ####
+image: shed_rotate_sm.gif
+----
+align: left
+----
+thumbsize: 300
+----
+
+#### text-block ####
+text:
+
+### Printed Parts
+Lots of opportunities to use my skills in 3D printing. Models, brackets, roof decorations inlcuding links to the stl files. 
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/>
+
+#### featured-image ####
+image: ebay-window.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./ebay-window.png
+#### text-block ####
+text:
+
+### Costs	
+
+A Breakdown in the costs, including great eBay captures (reduce, reuse recycle).
+<br/><br/><br/>
+<br/><br/><br/>
+
+#### featured-image ####
+image: finishroof.gif
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: 
+#### text-block ####
+text:
+
+### Timelapse
+Some timelapse videos of parts of the build. 
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/><br/>
+
+#### Step 1 - OpenSCAD
+The first step was to build a [model in OpenScad](https://github.com/bmsleight/shedshed/blob/master/shedshedshed.scad), after a couple of [iterations](https://github.com/bmsleight/shedshed) we got to a final version that should fit in to the space.  The advantage of modelling the shed in OpenSCAD is that I can 3D-Print some useful parts.
+
+#### Printed Scaled-down Shed
+The first useful part I can print is a model of the shed its self. 
+#### featured-image ####
+image: shed_rotate_sm.gif
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: 
+#### featured-image ####
+image: shed_context1.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./shed_context1.jpg
+#### featured-image ####
+image: shed_context2.jpg
+----
+align: left
+----
+thumbsize: 100
+----
+imagelink: ./shed_context2.jpg
+#### featured-image ####
+image: shed_context3.jpg
+----
+align: left
+----
+thumbsize: 100
+----
+imagelink: ./shed_context3.jpg
+#### text-block ####
+text:
+
+<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/>
+This allows me to play with the sizes, shape and look of the shed pre-build.  I can also see how it would look in the garden (sort-of).
+<br/>
+#### featured-image ####
+image: squarel.jpg
+----
+align: right
+----
+thumbsize: 100
+----
+imagelink: 
+#### featured-image ####
+image: hole_template.jpg
+----
+align: right
+----
+thumbsize: 100
+----
+imagelink: ./hole_template.jpg
+#### featured-image ####
+image: mount_plus_timber.jpg
+----
+align: right
+----
+thumbsize: 100
+----
+imagelink: ./mount_plus_timber.jpg
+#### featured-image ####
+image: mount.jpg
+----
+align: right
+----
+thumbsize: 100
+----
+imagelink: ./mount.jpg
+#### text-block ####
+text:
+
+#### Printed Parts
+The first item is a [wedge](https://github.com/bmsleight/shedshed/blob/master/wedge.scad) that is the exact angle needed for the roof beam. This can be screwed on to a piece of timber using the two wings. Which then gives suitable points to drill and install screw for connecting the roof to the frame. Also OpenSCAD makes it easy to [design](https://github.com/bmsleight/shedshed/blob/master/hole_template.scad) and print a hole template for the timber. This makes it easy for me to drill holes for the screws. The last item is a simple joint to keep the timber stud work square.
+#### featured-image ####
+image: footprint.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./footprint.jpg
+#### featured-image ####
+image: cctv.jpg
+----
+align: right
+----
+thumbsize: 300
+----
+imagelink: cctv.jpg
+#### text-block ####
+text:
+
+#### Step 2 - Mark & Step Up Camera
+The next step (apart from removing the old shed, clearing the area and removing rubbish), is to mark out the footprint of the Shed. Then set-up a camera to use as a time-lapse camera. 
+<br/><br/>
+#### text-block ####
+text:
+
+#### Costs 
+The cost for a custom build shed of 16 feet x 6 feet (4.88 x 1.83m) is around £1,500. This is smaller than the available space, but biggest available. I am aiming for  5.18 x 1.98m.  The £1,500 will get me a shed, I am after a timber building - with insulation and other nice things, but still within a tight budget. 
+ 
+#### featured-image ####
+image: ebay-window.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./ebay-window.png
+#### featured-image ####
+image: ebay-lights.png
+----
+align: right
+----
+thumbsize: 300
+----
+imagelink: ./ebay-lights.png
+#### featured-image ####
+image: ebay-door.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./ebay-door.png
+#### text-block ####
+text:
+
+One way to reduce costs is to hit eBay
+
+eBay: Windows 1800x900 £25 <br/>
+eBay: Oak Door £3
+eBay: Working Light £3
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/><br/>
+#### text-block ####
+text:
+
+### Build Log
+
+Some detailed updates of the build.
+ * [Build Log - The frame work](./build-log-shedshedshed) <br/>
+ * [Build Log - Cladding](./build-log-shedshedshed-cladding) <br/>
+ * [Build Log - Electrics](./electrics/) <br/>
+<br/><br/><br/>
+<br/><br/><br/>

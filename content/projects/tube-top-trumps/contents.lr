@@ -1,0 +1,23 @@
+title: Tube Top Trumps
+---
+body:
+
+#### featured-image ####
+image: card_back.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./best_tube_cards_v001.pdf
+#### text-block ####
+text:
+
+A pack of top trumps based upon tube stations in London. All content and image are available under Creative Commons license
+[Download - cards - 41.6 MB ](./best_tube_cards_v001.pdf)
+
+Data on the cards is from c.2012 all from Wikipedia (so may be a little out of date),  I actually used a python script to build - available upon request. 
+
+<br/><br/><br/><br/><br/>
+---
+subtitle: Creative Commons Pack of Top Trumps

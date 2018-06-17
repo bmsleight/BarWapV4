@@ -1,0 +1,117 @@
+title: ShedShedShed
+---
+subtitle: Making my Man Cave
+---
+body:
+
+#### featured-image ####
+image: shed_inside_003_desk_b.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./finished-shed
+#### text-block ####
+text:
+
+### Finished Shed
+[Some photos of the finished shed](./finished-shed).
+<br/><br/><br/>
+<br/><br/><br/>
+#### featured-image ####
+image: animaion1.gif
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./plan-and-set-up/
+#### text-block ####
+text:
+
+### Plan & Set-up
+[Using OpenSCAD and a 3D Printed Scaled-down Shed.](./plan-and-set-up/)
+<br/><br/><br/>
+<br/>
+#### featured-image ####
+image: foursides.jpg
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./build-logs/
+#### text-block ####
+text:
+
+### Building Log
+[Detailed build log, mainly timelapses, videos and photos of the construction.](./build-logs/)
+<br/><br/><br/>
+<br/><br/><br/>
+#### featured-image ####
+image: shed_rotate_sm.gif
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: 
+#### text-block ####
+text:
+
+### Printed Parts
+Lots of opportunities to use my skills in 3D printing. Models, brackets, roof decorations including links to the stl files. 
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/>
+#### featured-image ####
+image: ebay-window.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./costs/
+#### text-block ####
+text:
+
+### Costs	
+
+[A Breakdown in the costs, including great eBay captures (reduce, reuse recycle)](./costs).
+<br/><br/><br/>
+<br/><br/><br/>
+#### featured-image ####
+image: screenshot.png
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: ./automation
+#### text-block ####
+text:
+
+### Automation, Code and Control
+[Details of how the Shed is automated, the code used to control light, locks and printers.](automation)
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/><br/>
+#### featured-image ####
+image: finishroof.gif
+----
+align: left
+----
+thumbsize: 300
+----
+imagelink: 
+#### text-block ####
+text:
+
+### Timelapse
+Some timelapse videos of parts of the build. 
+<br/><br/><br/>
+<br/><br/><br/>

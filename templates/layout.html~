@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="/assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
 
-                <meta name="keywords" content="Brendan,Sleight,barwap,projects, Brendan M. Sleight">
+                <meta name="keywords" content="Brendan Sleight, Brendan, Sleight, barwap, projects, Brendan M. Sleight">
                 <meta name="author" content="Brendan Sleight">
 	</head>
       {% block bodyclass %}{% endblock %}
@@ -48,7 +48,7 @@
 						<li><a href="https://uk.linkedin.com/in/brendan-sleight-845b9879" class="icon fa-linkedin"><span class="label">Facebook</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Brendan M. Sleight All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Brendan Sleight All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</footer>
 
